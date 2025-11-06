@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/src/i18n/routing';
 
 export default function PortfolioHighlights() {
   const t = useTranslations('portfolio');
