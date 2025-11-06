@@ -53,7 +53,7 @@ export default function ServicesSection() {
                 transformStyle: 'preserve-3d',
                 transform: 'translateZ(0)'
               }}
-              onMouseMove={(e) => {
+              onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
                 const card = e.currentTarget;
                 const rect = card.getBoundingClientRect();
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -62,7 +62,7 @@ export default function ServicesSection() {
                   x * 15
                 }deg) rotateX(${-y * 15}deg) translateZ(20px)`;
               }}
-              onMouseLeave={(e) => {
+              onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
                 e.currentTarget.style.transform = 'translateZ(0)';
               }}
             >

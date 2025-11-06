@@ -36,7 +36,7 @@ export default function TechStackSection() {
               key={idx}
               className="group relative bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 text-center border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-2 cursor-default"
               style={{ transformStyle: 'preserve-3d' }}
-              onMouseMove={(e) => {
+              onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
                 const card = e.currentTarget;
                 const rect = card.getBoundingClientRect();
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -45,7 +45,7 @@ export default function TechStackSection() {
                   x * 10
                 }deg) rotateX(${-y * 10}deg) translateY(-8px)`;
               }}
-              onMouseLeave={(e) => {
+              onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
                 e.currentTarget.style.transform = 'translateZ(0)';
               }}
             >
