@@ -13,23 +13,20 @@ export default function Navbar() {
   const locale = useLocale();
 
   const navLinks = [
-    { name: t('home'), href: `/${locale}` },
-    { name: t('about'), href: `/${locale}/about` },
+    { name: t('home'), href: '/' },
+    { name: t('about'), href: '/about' },
     {
       name: t('services'),
       href: '#',
       submenu: [
-        { name: t('aiAgents'), href: `/${locale}/services/ai-agents` },
-        { name: t('automation'), href: `/${locale}/services/automation` },
-        {
-          name: t('webDevelopment'),
-          href: `/${locale}/services/web-development`
-        },
-        { name: t('consulting'), href: `/${locale}/services/consulting` }
+        { name: t('aiAgents'), href: '/services/ai-agents' },
+        { name: t('automation'), href: '/services/automation' },
+        { name: t('webDevelopment'), href: '/services/web-development' },
+        { name: t('consulting'), href: '/services/consulting' }
       ]
     },
-    { name: t('portfolio'), href: `/${locale}/portfolio` },
-    { name: t('contact'), href: `/${locale}/contact` }
+    { name: t('portfolio'), href: '/portfolio' },
+    { name: t('contact'), href: '/contact' }
   ];
 
   const toggleLocale = () => {

@@ -12,7 +12,7 @@
     "consulting": "Consultoría"
   },
   "hero": {
-    "title": "Izalith",
+    "title": "Izalith Consulting Corporation",
     "subtitle": "Ingeniería de Despliegue Directo",
     "tagline": "Agentes IA • Automatización • Integración",
     "exploreServices": "Explorar Servicios",
@@ -23,26 +23,6 @@
     "activeUsers": "Usuarios IA Activos",
     "uptime": "SLA de Disponibilidad",
     "countries": "Países Atendidos"
-  },
-  "services": {
-    "title": "Servicios",
-    "subtitle": "Soluciones de ingeniería integradas que transforman tus operaciones",
-    "aiAgents": {
-      "title": "Agentes IA",
-      "description": "IA conversacional bilingüe en WhatsApp, voz y canales web"
-    },
-    "automation": {
-      "title": "Automatización",
-      "description": "Flujos de trabajo n8n para clasificación, enrutamiento y automatización de procesos"
-    },
-    "dataIntegration": {
-      "title": "Integración de Datos",
-      "description": "Pipelines ETL, integraciones API y sincronización en tiempo real"
-    },
-    "fullStack": {
-      "title": "Desarrollo Full-Stack",
-      "description": "Aplicaciones React, Node.js, TypeScript con arquitectura moderna"
-    }
   },
   "portfolio": {
     "title": "Trabajo Destacado",
@@ -149,6 +129,648 @@
     },
     "consulting": {
       "title": "Consultoría - En Construcción"
+    }
+  },
+  "about": {
+    "title": "Acerca de Izalith",
+    "subtitle": "Excelencia en Ingeniería de Despliegue Directo",
+    "hero": {
+      "title": "Excelencia en Ingeniería Desde 2008",
+      "description": "15+ años construyendo sistemas listos para producción a través de continentes",
+      "yearsLabel": "Años de Experiencia",
+      "projectsLabel": "Proyectos Entregados",
+      "clientsLabel": "Clientes Empresariales"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Colaboramos con empresas visionarias para construir, integrar y desplegar soluciones impulsadas por IA que transforman operaciones. Desde el concepto hasta producción, entregamos resultados que importan."
+    },
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Fundada por un ingeniero de software con más de 15 años de experiencia en México, Canadá, Japón y Europa, Izalith surgió de una creencia simple: la tecnología debe empoderar a las empresas, no complicarlas.",
+      "paragraph2": "Desde 2008, hemos trabajado con gigantes empresariales como Wenco (Hitachi), Unity Technologies, y startups innovadoras en Norteamérica y Latinoamérica. Nuestro historial habla por sí mismo: 10,000+ usuarios activos de agentes IA, 99.9% de disponibilidad en sistemas críticos, y más de $5M en infraestructura gestionada.",
+      "paragraph3": "Hoy, con oficinas en Morelia y Vancouver, continuamos empujando los límites de lo posible con agentes IA, automatización y tecnologías web modernas."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "excellence": {
+        "title": "Excelencia y Calidad",
+        "description": "Código limpio, altos estándares y soluciones listas para producción siempre"
+      },
+      "leadership": {
+        "title": "Liderazgo y Mentoría",
+        "description": "Hemos mentorado a más de 20 desarrolladores y creemos en crecer juntos"
+      },
+      "results": {
+        "title": "Enfocados en Resultados",
+        "description": "Las métricas importan. La disponibilidad importa. El rendimiento importa. Entregamos impacto medible."
+      },
+      "innovation": {
+        "title": "Innovación Primero",
+        "description": "Adoptantes tempranos de agentes IA, automatización y tecnologías de vanguardia"
+      },
+      "global": {
+        "title": "Colaboración Global",
+        "description": "Experiencia en México, Canadá, India, Japón y Europa"
+      }
+    },
+    "expertise": {
+      "title": "Experiencia",
+      "subtitle": "Lo que aportamos",
+      "aiEngineering": {
+        "title": "Ingeniería de IA",
+        "items": [
+          "Integración LLM (OpenAI, Claude)",
+          "Sistemas RAG y Bases de Datos Vectoriales",
+          "Ingeniería de Prompts y Ajuste Fino",
+          "Agentes IA Multi-canal (WhatsApp, Voz, Web)"
+        ]
+      },
+      "fullStack": {
+        "title": "Desarrollo Full-Stack",
+        "items": [
+          "React, Next.js, TypeScript",
+          "Node.js, Python, Django",
+          "Sistemas en Tiempo Real (WebSockets)",
+          "Infraestructura Azure, AWS, GCP"
+        ]
+      },
+      "automation": {
+        "title": "Automatización de Procesos",
+        "items": [
+          "Orquestación de Flujos n8n",
+          "Integraciones API",
+          "Pipelines ETL",
+          "Optimización de Procesos de Negocio"
+        ]
+      },
+      "leadership": {
+        "title": "Liderazgo Técnico",
+        "items": [
+          "Gestión de Equipos (15+ ingenieros)",
+          "Scrum Master y Coach Ágil",
+          "Arquitectura y Diseño de Sistemas",
+          "Mentoría y Capacitación"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Construir Algo Grandioso?",
+      "description": "Conversemos sobre cómo podemos ayudar a transformar tus operaciones",
+      "button": "Agendar Llamada"
+    }
+  },
+  "services": {
+    "aiAgents": {
+      "hero": {
+        "title": "Agentes IA",
+        "subtitle": "IA Conversacional Inteligente en Todos los Canales",
+        "description": "Construye agentes de IA listos para producción que manejan soporte al cliente, ventas y automatización en WhatsApp, Telegram, Voz y Web con más del 95% de precisión."
+      },
+      "useCases": {
+        "title": "Casos de Uso",
+        "subtitle": "Aplicaciones del mundo real que entregan resultados medibles",
+        "case1": {
+          "title": "Automatización de Soporte al Cliente",
+          "description": "Soporte bilingüe 24/7 manejando FAQs, solución de problemas y creación de tickets con transferencia a humanos cuando se necesita"
+        },
+        "case2": {
+          "title": "Ventas y Calificación de Leads",
+          "description": "Involucra prospectos, califica leads, agenda demos y direcciona a equipos de ventas automáticamente"
+        },
+        "case3": {
+          "title": "Operaciones Internas",
+          "description": "Onboarding de empleados, consultas de RH, soporte IT y acceso a base de conocimiento vía interfaz conversacional"
+        },
+        "case4": {
+          "title": "Asistentes de Voz IA",
+          "description": "Conversaciones de voz naturales con integración ElevenLabs para sistemas telefónicos y call centers"
+        }
+      },
+      "techStack": {
+        "title": "Stack Tecnológico",
+        "llms": "Modelos LLM",
+        "llmsItems": [
+          "OpenAI GPT-4",
+          "Claude 3.5 Sonnet",
+          "Modelos Personalizados Fine-tuned"
+        ],
+        "infrastructure": "Infraestructura",
+        "infrastructureItems": [
+          "Orquestación n8n",
+          "Bases de Datos Vectoriales (Pinecone)",
+          "PostgreSQL + Redis",
+          "GCP / AWS"
+        ],
+        "channels": "Canales",
+        "channelsItems": [
+          "WhatsApp Business API",
+          "Telegram Bot API",
+          "Voz (ElevenLabs)",
+          "Widget de Chat Web"
+        ],
+        "monitoring": "Monitoreo y Calidad",
+        "monitoringItems": [
+          "Evaluaciones en Tiempo Real",
+          "Pruebas A/B",
+          "Detección de Alucinaciones",
+          "Métricas de Rendimiento"
+        ]
+      },
+      "process": {
+        "title": "Nuestro Proceso",
+        "step1": {
+          "title": "Descubrimiento y Diseño",
+          "description": "Entender tu caso de uso, diseñar flujos de conversación y definir métricas de éxito"
+        },
+        "step2": {
+          "title": "Implementación RAG",
+          "description": "Construir base de conocimiento, implementar búsqueda vectorial y optimizar precisión de recuperación"
+        },
+        "step3": {
+          "title": "Desarrollo del Agente",
+          "description": "Desarrollar agente IA con ingeniería de prompts, pruebas y aseguramiento de calidad"
+        },
+        "step4": {
+          "title": "Integración y Despliegue",
+          "description": "Conectar a tus canales, CRM y sistemas. Desplegar con monitoreo y alertas"
+        },
+        "step5": {
+          "title": "Optimizar y Escalar",
+          "description": "Mejora continua mediante pruebas A/B, loops de retroalimentación y ajuste de rendimiento"
+        }
+      },
+      "realProjects": {
+        "title": "Proyectos Reales",
+        "project1": {
+          "name": "Plataforma IA Made by Humans",
+          "description": "Plataforma de agentes IA bilingües sirviendo a más de 10,000 usuarios activos en WhatsApp, Telegram y canales de Voz",
+          "metrics": [
+            "10,000+ Usuarios Activos",
+            "95%+ Tasa de Precisión",
+            "Soporte Multi-canal",
+            "40% Reducción en Alucinaciones"
+          ]
+        },
+        "project2": {
+          "name": "Axen Energy - Agente de Ventas Solar",
+          "description": "Chatbot WhatsApp automatizando ventas de paneles solares desde consulta hasta generación de cotizaciones, operando 24/7 en México",
+          "metrics": [
+            "Disponibilidad 24/7",
+            "78% Aumento en Conversión",
+            "80% Respuesta Más Rápida",
+            "Cotizaciones Automatizadas"
+          ]
+        },
+        "project3": {
+          "name": "Axen Capital - Asistente Financiero",
+          "description": "Asistente financiero inteligente con análisis IA de 8 capas: clasificación de intención, extracción de entidades, análisis de sentimiento y más",
+          "metrics": [
+            "8 Capas de Análisis IA",
+            "Contexto Multi-dimensional",
+            "Análisis de Documentos",
+            "Analytics en Tiempo Real"
+          ]
+        },
+        "project4": {
+          "name": "Paquetes AI WhatsApp",
+          "description": "Producto comercial con paquetes: Micro ($10K setup), Professional ($50K) y Enterprise ($150K) para empresas",
+          "metrics": [
+            "3 Paquetes Tier",
+            "Setup 48h (Micro)",
+            "Integración CRM",
+            "Análisis Predictivo"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Desplegar Agentes IA?",
+        "description": "Conversemos sobre cómo la IA conversacional puede transformar tus operaciones",
+        "button": "Agendar Llamada Estratégica"
+      }
+    },
+    "automation": {
+      "hero": {
+        "title": "Automatización de Procesos",
+        "subtitle": "Flujos de Trabajo n8n que Transforman Operaciones",
+        "description": "Automatiza clasificación, enrutamiento, pipelines de datos y procesos de negocio con flujos visuales que se integran con tus herramientas existentes."
+      },
+      "useCases": {
+        "title": "Casos de Uso",
+        "subtitle": "Automatización que entrega ROI desde el día uno",
+        "case1": {
+          "title": "Clasificación de Email y Comunicación",
+          "description": "Enruta automáticamente emails, mensajes y consultas a los equipos correctos con clasificación IA"
+        },
+        "case2": {
+          "title": "Pipelines de Datos y ETL",
+          "description": "Extrae, transforma y carga datos entre sistemas automáticamente con programación y manejo de errores"
+        },
+        "case3": {
+          "title": "Automatización de CRM y Ventas",
+          "description": "Actualiza CRMs automáticamente, envía seguimientos, crea tareas y dispara flujos basados en acciones del cliente"
+        },
+        "case4": {
+          "title": "Notificaciones y Alertas",
+          "description": "Notificaciones en tiempo real vía Slack, Telegram, email cuando ocurren eventos críticos en tus sistemas"
+        }
+      },
+      "techStack": {
+        "title": "Stack Tecnológico",
+        "orchestration": "Orquestación",
+        "orchestrationItems": [
+          "Flujos n8n",
+          "Nodos Personalizados",
+          "Disparadores Webhook",
+          "Trabajos Programados"
+        ],
+        "integrations": "Integraciones",
+        "integrationsItems": [
+          "Google Workspace",
+          "Slack / Telegram",
+          "Airtable / Notion",
+          "PostgreSQL / MySQL"
+        ],
+        "ai": "Mejora con IA",
+        "aiItems": [
+          "Clasificación OpenAI",
+          "Análisis de Sentimiento",
+          "Extracción de Entidades",
+          "Enrutamiento Inteligente"
+        ],
+        "monitoring": "Monitoreo",
+        "monitoringItems": [
+          "Rastreo de Errores",
+          "Logs de Ejecución",
+          "Métricas de Rendimiento",
+          "Sistema de Alertas"
+        ]
+      },
+      "process": {
+        "title": "Nuestro Proceso",
+        "step1": {
+          "title": "Mapeo de Procesos",
+          "description": "Documentar flujos actuales, identificar cuellos de botella y definir oportunidades de automatización"
+        },
+        "step2": {
+          "title": "Diseño de Flujos",
+          "description": "Diseñar flujos n8n con manejo apropiado de errores, reintentos y casos extremos"
+        },
+        "step3": {
+          "title": "Configuración de Integraciones",
+          "description": "Conectar todos los sistemas, APIs y fuentes de datos con autenticación y seguridad"
+        },
+        "step4": {
+          "title": "Pruebas y QA",
+          "description": "Pruebas exhaustivas con datos reales, casos extremos y escenarios de falla"
+        },
+        "step5": {
+          "title": "Despliegue y Monitoreo",
+          "description": "Despliegue en producción con monitoreo, alertas y optimización continua"
+        }
+      },
+      "realProjects": {
+        "title": "Proyectos Reales",
+        "project1": {
+          "name": "Automatización Subastas La Silla",
+          "description": "Notificaciones automáticas de pujas, campañas de email e integración de livestream YouTube para plataforma de subastas de alto tráfico",
+          "metrics": [
+            "1,000+ Usuarios Concurrentes",
+            "Notificaciones de Pujas en Tiempo Real",
+            "Campañas de Email Automatizadas",
+            "Eventos Sin Caídas"
+          ]
+        },
+        "project2": {
+          "name": "100+ Templates n8n",
+          "description": "Biblioteca de templates de automatización empresarial cubriendo agentes IA, sistemas RAG, automatización CRM, DevOps y creación de contenido",
+          "metrics": [
+            "100+ Templates",
+            "15 Categorías",
+            "Listos para Producción",
+            "Modulares y Reutilizables"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Automatizar tus Procesos?",
+        "description": "Identifiquemos flujos de trabajo que pueden ahorrarte tiempo y dinero",
+        "button": "Agendar Llamada de Descubrimiento"
+      }
+    },
+    "webDevelopment": {
+      "hero": {
+        "title": "Desarrollo Web Full-Stack",
+        "subtitle": "Aplicaciones Listas para Producción Construidas Correctamente",
+        "description": "Aplicaciones web modernas con React, Next.js y TypeScript. Desde MVPs hasta sistemas empresariales manejando miles de usuarios concurrentes."
+      },
+      "useCases": {
+        "title": "Casos de Uso",
+        "subtitle": "Aplicaciones construidas para escala y rendimiento",
+        "case1": {
+          "title": "Plataformas en Tiempo Real",
+          "description": "Plataformas de subastas, pujas en vivo, sistemas de chat y herramientas colaborativas con tecnología WebSocket"
+        },
+        "case2": {
+          "title": "Dashboards Empresariales",
+          "description": "Monitoreo IoT, inteligencia de negocios, consolas de administración y visualización de datos para operaciones críticas"
+        },
+        "case3": {
+          "title": "E-Commerce y Marketplaces",
+          "description": "Tiendas online, sistemas de reservas, procesamiento de pagos y gestión de inventario"
+        },
+        "case4": {
+          "title": "Productos SaaS y MVPs",
+          "description": "Iteración rápida de concepto a producción con frameworks modernos y mejores prácticas"
+        }
+      },
+      "techStack": {
+        "title": "Stack Tecnológico",
+        "frontend": "Frontend",
+        "frontendItems": [
+          "React / Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Framer Motion"
+        ],
+        "backend": "Backend",
+        "backendItems": [
+          "Node.js / Python",
+          "Django / FastAPI",
+          "PostgreSQL / MySQL",
+          "Caché Redis"
+        ],
+        "realtime": "Tiempo Real",
+        "realtimeItems": [
+          "WebSockets",
+          "Server-Sent Events",
+          "SignalR",
+          "Sistemas Pub/Sub"
+        ],
+        "infrastructure": "Infraestructura",
+        "infrastructureItems": [
+          "AWS / GCP / Azure",
+          "Docker / Kubernetes",
+          "Pipelines CI/CD",
+          "CDN y Caché"
+        ]
+      },
+      "process": {
+        "title": "Nuestro Proceso",
+        "step1": {
+          "title": "Requisitos y Diseño",
+          "description": "Recopilar requisitos, crear wireframes y diseñar arquitectura del sistema"
+        },
+        "step2": {
+          "title": "Desarrollo Ágil",
+          "description": "Sprints de 2 semanas con standups diarios, revisiones de código e integración continua"
+        },
+        "step3": {
+          "title": "Aseguramiento de Calidad",
+          "description": "Pruebas unitarias, pruebas de integración, pruebas de rendimiento y auditorías de seguridad"
+        },
+        "step4": {
+          "title": "Despliegue y DevOps",
+          "description": "Despliegues automatizados, monitoreo, logging e infraestructura como código"
+        },
+        "step5": {
+          "title": "Mantenimiento y Soporte",
+          "description": "Soporte continuo, corrección de bugs, actualizaciones de features y optimización de rendimiento"
+        }
+      },
+      "realProjects": {
+        "title": "Real Projects",
+        "project1": {
+          "name": "Wenco Mining Platform (Hitachi)",
+          "description": "Enterprise IoT system for mission-critical mining operations with real-time telemetry across continents. Led frontend team for 4+ years.",
+          "metrics": [
+            "Multi-Continent Deployment",
+            "99.9% Uptime SLA",
+            "Real-Time Telemetry",
+            "15+ Engineers Managed"
+          ]
+        },
+        "project2": {
+          "name": "Subastas La Silla",
+          "description": "Real-time auction platform supporting 1,000+ concurrent users during live horse auctions with WebSocket bidding",
+          "metrics": [
+            "1,000+ Concurrent Users",
+            "Real-Time Bidding",
+            "Zero Downtime",
+            "Django + Nuxt.js"
+          ]
+        },
+        "project3": {
+          "name": "Radical I/O - Disney Movie Insiders",
+          "description": "Enabled Disney Movie Insiders to exchange points online for movie tickets and merchandise with frontend architecture design",
+          "metrics": [
+            "Disney Partnership",
+            "Points Exchange System",
+            "E-commerce Integration",
+            "UI/UX Delivery"
+          ]
+        },
+        "project4": {
+          "name": "Radical I/O - MyRichmond",
+          "description": "Streamlined citizen interactions with City of Richmond: centralized hub for taxes, utilities, garbage collection, recycling with feedback mechanisms",
+          "metrics": [
+            "Municipal Platform",
+            "Citizen Services",
+            "Search & Calendar",
+            "Feedback Systems"
+          ]
+        },
+        "project5": {
+          "name": "Central 1 Credit Union - Payroll Solutions",
+          "description": "Small business payroll solutions for credit unions. Led 5 co-ops and 2 junior developers as Scrum Master for 7-member team",
+          "metrics": [
+            "2+ Years Project",
+            "Team Leadership",
+            "Angular Migration",
+            "WCAG Compliance"
+          ]
+        },
+        "project6": {
+          "name": "Sage Software - Mobile Services",
+          "description": "Lead web developer for 6+ years developing Sage Mobile Services, Android app, and multiple web applications with automated testing",
+          "metrics": [
+            "6+ Years Tenure",
+            "Android + Web",
+            "Lead Developer",
+            "Selenium Automation"
+          ]
+        },
+        "project7": {
+          "name": "Radiant Communications - OSS Platform",
+          "description": "Integrated web-based operating systems supporting business processes. Built customer-facing portal for trouble tickets replacing manual emails",
+          "metrics": [
+            "ASP.NET MVC5",
+            "Customer Portal",
+            "Ticket Tracker",
+            "Real-time Alerts"
+          ]
+        },
+        "project8": {
+          "name": "Unity Technologies - Robotics IDE",
+          "description": "Browser-based IDE for Tethys education platform enabling K-12 students to program Pepper robots (SoftBank partnership)",
+          "metrics": [
+            "Browser-Based Programming",
+            "K-12 Education",
+            "React + TypeScript",
+            "No Installation"
+          ]
+        },
+        "project9": {
+          "name": "Concurso La Silla",
+          "description": "International equestrian competition platform with Boletia ticketing integration and multilingual content",
+          "metrics": [
+            "2,000+ Tickets Sold",
+            "50+ Sponsors",
+            "90% Overhead Reduction",
+            "International Reach"
+          ]
+        },
+        "project10": {
+          "name": "PEMT Logística",
+          "description": "Complete digital transformation: website, email infrastructure, WhatsApp integration, and lead generation pipeline from scratch",
+          "metrics": [
+            "Digital Transformation",
+            "5+ Email Accounts",
+            "WhatsApp Integration",
+            "14K MXN Budget"
+          ]
+        },
+        "project11": {
+          "name": "Congreso Internacional de Turismo",
+          "description": "Academic conference website with registration, speaker profiles, and Boletia integration for multi-day event",
+          "metrics": [
+            "Multi-day Program",
+            "Speaker Profiles",
+            "Group Discounts",
+            "SEO Optimized"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Construir tu Aplicación?",
+        "description": "Convirtamos tu visión en un sistema listo para producción",
+        "button": "Agendar Llamada Técnica"
+      }
+    },
+    "consulting": {
+      "hero": {
+        "title": "Consultoría y Liderazgo Técnico",
+        "subtitle": "Guía Tecnológica Estratégica desde las Trincheras",
+        "description": "15+ años de experiencia práctica liderando equipos, diseñando arquitecturas y entregando resultados en México, Canadá, Japón y Europa."
+      },
+      "useCases": {
+        "title": "Servicios",
+        "subtitle": "Guía estratégica respaldada por ejecución del mundo real",
+        "case1": {
+          "title": "Liderazgo Técnico",
+          "description": "CTO interino, construcción de equipos técnicos, contratación, onboarding y mentoría para empresas en crecimiento"
+        },
+        "case2": {
+          "title": "Arquitectura y Diseño de Sistemas",
+          "description": "Revisiones de arquitectura de sistemas, planeación de escalabilidad, selección de tecnología y estrategias de migración"
+        },
+        "case3": {
+          "title": "Coaching Ágil",
+          "description": "Servicios de Scrum Master, transformación ágil, optimización de procesos y mejora de productividad de equipos"
+        },
+        "case4": {
+          "title": "Revisiones de Código y Auditorías",
+          "description": "Evaluaciones de calidad de código, auditorías de seguridad, optimización de rendimiento y reducción de deuda técnica"
+        }
+      },
+      "experience": {
+        "title": "Experiencia",
+        "companies": "Experiencia Empresarial",
+        "companiesItems": [
+          "Wenco (Hitachi) - 4+ años",
+          "Unity Technologies",
+          "Central 1 Credit Union",
+          "Sage Software - 6+ años"
+        ],
+        "leadership": "Liderazgo",
+        "leadershipItems": [
+          "Gestionado 15+ Ingenieros",
+          "Liderado 3 Equipos Extranjeros",
+          "Scrum Master de 7 Equipos",
+          "Mentoría de 20+ Desarrolladores"
+        ],
+        "technical": "Experiencia Técnica",
+        "technicalItems": [
+          "Desarrollo Full-Stack",
+          "Integración IA/ML",
+          "Arquitectura Cloud",
+          "Sistemas IoT y Tiempo Real"
+        ],
+        "global": "Colaboración Global",
+        "globalItems": [
+          "Operaciones en México",
+          "Mercados Canadá y EE.UU.",
+          "Gestión de Equipos India",
+          "Experiencia Europa y Japón"
+        ]
+      },
+      "process": {
+        "title": "Modelos de Compromiso",
+        "step1": {
+          "title": "Asesoría Estratégica",
+          "description": "Retención mensual para guía técnica continua, revisiones de arquitectura y soporte en decisiones"
+        },
+        "step2": {
+          "title": "Liderazgo Interino",
+          "description": "Rol de CTO/VP de Ingeniería tiempo parcial o completo por 3-12 meses durante transiciones o crecimiento"
+        },
+        "step3": {
+          "title": "Basado en Proyectos",
+          "description": "Compromisos de alcance fijo para diseño de arquitectura, auditorías o iniciativas técnicas específicas"
+        },
+        "step4": {
+          "title": "Aumento de Equipos",
+          "description": "Líder técnico integrado trabajando junto a tu equipo para entregar mientras construye capacidad interna"
+        }
+      },
+      "realProjects": {
+        "title": "Proyectos Reales",
+        "project1": {
+          "name": "EducarUno - Instructor Técnico",
+          "description": "Lideré curriculum de desarrollo web e IA para 200+ estudiantes (12-18 años) durante 2 años en plataforma EdTech mexicana",
+          "metrics": [
+            "200+ Estudiantes Enseñados",
+            "95% Tasa de Retención",
+            "2 Años Experiencia",
+            "HTML/CSS/JS + IA/NLP"
+          ]
+        },
+        "project2": {
+          "name": "Curso IA para Maestros",
+          "description": "Desarrollé curso completo de fundamentos de IA para maestros de preparatoria y universidad con metodología interactiva",
+          "metrics": [
+            "Capacitación Docente",
+            "Módulo 60min Desarrollado",
+            "Actividades Interactivas",
+            "Enfoque Ética y Privacidad"
+          ]
+        },
+        "project3": {
+          "name": "Estrategia RFP Gobierno Canadá",
+          "description": "Consultoría estratégica para contratos gubernamentales a través de plataformas SAP Ariba, MERX, CanadaBuys y BC Bid",
+          "metrics": [
+            "Oportunidades Federales",
+            "Contratos Provinciales",
+            "Standing Offers",
+            "Registrado CRA"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Guía Técnica Estratégica?",
+        "description": "Conversemos sobre cómo 15+ años de experiencia pueden acelerar tu éxito",
+        "button": "Agendar Sesión Estratégica"
+      }
     }
   }
 }

@@ -12,7 +12,7 @@
     "consulting": "Consulting"
   },
   "hero": {
-    "title": "Izalith",
+    "title": "Izalith Consulting Corporation",
     "subtitle": "Forward-Deployed Engineering",
     "tagline": "AI Agents • Automation • Integration",
     "exploreServices": "Explore Services",
@@ -23,26 +23,6 @@
     "activeUsers": "Active AI Users",
     "uptime": "Uptime SLA",
     "countries": "Countries Served"
-  },
-  "services": {
-    "title": "Services",
-    "subtitle": "Embedded engineering solutions that transform your business operations",
-    "aiAgents": {
-      "title": "AI Agents",
-      "description": "Bilingual conversational AI across WhatsApp, voice, and web channels"
-    },
-    "automation": {
-      "title": "Automation",
-      "description": "n8n workflows for triage, routing, and business process automation"
-    },
-    "dataIntegration": {
-      "title": "Data Integration",
-      "description": "ETL pipelines, API integrations, and real-time data synchronization"
-    },
-    "fullStack": {
-      "title": "Full-Stack Dev",
-      "description": "React, Node.js, TypeScript applications with modern architecture"
-    }
   },
   "portfolio": {
     "title": "Featured Work",
@@ -149,6 +129,648 @@
     },
     "consulting": {
       "title": "Consulting - Under Construction"
+    }
+  },
+  "about": {
+    "title": "About Izalith",
+    "subtitle": "Forward-Deployed Engineering Excellence",
+    "hero": {
+      "title": "Engineering Excellence Since 2008",
+      "description": "15+ years building production-ready systems across continents",
+      "yearsLabel": "Years Experience",
+      "projectsLabel": "Projects Delivered",
+      "clientsLabel": "Enterprise Clients"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We partner with forward-thinking companies to build, integrate, and deploy AI-powered solutions that transform operations. From concept to production, we deliver results that matter."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded by a software engineer with 15+ years of experience across Mexico, Canada, Japan, and Europe, Izalith emerged from a simple belief: technology should empower businesses, not complicate them.",
+      "paragraph2": "Since 2008, we've worked with enterprise giants like Wenco (Hitachi), Unity Technologies, and innovative startups across North America and Latin America. Our track record speaks for itself: 10,000+ active AI agent users, 99.9% uptime on mission-critical systems, and $5M+ in managed infrastructure.",
+      "paragraph3": "Today, with offices in Morelia and Vancouver, we continue pushing the boundaries of what's possible with AI agents, automation, and modern web technologies."
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence & Quality",
+        "description": "Clean code, high standards, and production-ready solutions every time"
+      },
+      "leadership": {
+        "title": "Leadership & Mentorship",
+        "description": "We've mentored 20+ developers and believe in growing together"
+      },
+      "results": {
+        "title": "Results-Driven",
+        "description": "Metrics matter. Uptime matters. Performance matters. We deliver measurable impact."
+      },
+      "innovation": {
+        "title": "Innovation First",
+        "description": "Early adopters of AI agents, automation, and cutting-edge technologies"
+      },
+      "global": {
+        "title": "Global Collaboration",
+        "description": "Experience across Mexico, Canada, India, Japan, and Europe"
+      }
+    },
+    "expertise": {
+      "title": "Expertise",
+      "subtitle": "What we bring to the table",
+      "aiEngineering": {
+        "title": "AI Engineering",
+        "items": [
+          "LLM Integration (OpenAI, Claude)",
+          "RAG Systems & Vector Databases",
+          "Prompt Engineering & Fine-tuning",
+          "Multi-channel AI Agents (WhatsApp, Voice, Web)"
+        ]
+      },
+      "fullStack": {
+        "title": "Full-Stack Development",
+        "items": [
+          "React, Next.js, TypeScript",
+          "Node.js, Python, Django",
+          "Real-time Systems (WebSockets)",
+          "Azure, AWS, GCP Infrastructure"
+        ]
+      },
+      "automation": {
+        "title": "Process Automation",
+        "items": [
+          "n8n Workflow Orchestration",
+          "API Integrations",
+          "ETL Pipelines",
+          "Business Process Optimization"
+        ]
+      },
+      "leadership": {
+        "title": "Technical Leadership",
+        "items": [
+          "Team Management (15+ engineers)",
+          "Scrum Master & Agile Coach",
+          "Architecture & System Design",
+          "Mentorship & Training"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Build Something Great?",
+      "description": "Let's discuss how we can help transform your operations",
+      "button": "Schedule a Call"
+    }
+  },
+  "services": {
+    "aiAgents": {
+      "hero": {
+        "title": "AI Agents",
+        "subtitle": "Intelligent Conversational AI Across All Channels",
+        "description": "Build production-ready AI agents that handle customer support, sales, and automation across WhatsApp, Telegram, Voice, and Web with 95%+ accuracy."
+      },
+      "useCases": {
+        "title": "Use Cases",
+        "subtitle": "Real-world applications delivering measurable results",
+        "case1": {
+          "title": "Customer Support Automation",
+          "description": "24/7 bilingual support handling FAQs, troubleshooting, and ticket creation with human handoff when needed"
+        },
+        "case2": {
+          "title": "Sales & Lead Qualification",
+          "description": "Engage prospects, qualify leads, schedule demos, and route to sales teams automatically"
+        },
+        "case3": {
+          "title": "Internal Operations",
+          "description": "Employee onboarding, HR queries, IT support, and knowledge base access via conversational interface"
+        },
+        "case4": {
+          "title": "Voice AI Assistants",
+          "description": "Natural voice conversations with ElevenLabs integration for phone systems and call centers"
+        }
+      },
+      "techStack": {
+        "title": "Technology Stack",
+        "llms": "LLM Models",
+        "llmsItems": [
+          "OpenAI GPT-4",
+          "Claude 3.5 Sonnet",
+          "Custom Fine-tuned Models"
+        ],
+        "infrastructure": "Infrastructure",
+        "infrastructureItems": [
+          "n8n Orchestration",
+          "Vector Databases (Pinecone)",
+          "PostgreSQL + Redis",
+          "GCP / AWS"
+        ],
+        "channels": "Channels",
+        "channelsItems": [
+          "WhatsApp Business API",
+          "Telegram Bot API",
+          "Voice (ElevenLabs)",
+          "Web Chat Widget"
+        ],
+        "monitoring": "Monitoring & Quality",
+        "monitoringItems": [
+          "Real-time Evals",
+          "A/B Testing",
+          "Hallucination Detection",
+          "Performance Metrics"
+        ]
+      },
+      "process": {
+        "title": "Our Process",
+        "step1": {
+          "title": "Discovery & Design",
+          "description": "Understand your use case, design conversation flows, and define success metrics"
+        },
+        "step2": {
+          "title": "RAG Implementation",
+          "description": "Build knowledge base, implement vector search, and optimize retrieval accuracy"
+        },
+        "step3": {
+          "title": "Agent Development",
+          "description": "Develop AI agent with prompt engineering, testing, and quality assurance"
+        },
+        "step4": {
+          "title": "Integration & Deploy",
+          "description": "Connect to your channels, CRM, and systems. Deploy with monitoring and alerts"
+        },
+        "step5": {
+          "title": "Optimize & Scale",
+          "description": "Continuous improvement through A/B testing, feedback loops, and performance tuning"
+        }
+      },
+      "realProjects": {
+        "title": "Real Projects",
+        "project1": {
+          "name": "Made by Humans AI Platform",
+          "description": "Bilingual AI agent platform serving 10,000+ active users across WhatsApp, Telegram, and Voice channels",
+          "metrics": [
+            "10,000+ Active Users",
+            "95%+ Accuracy Rate",
+            "Multi-channel Support",
+            "40% Reduction in Hallucinations"
+          ]
+        },
+        "project2": {
+          "name": "Axen Energy - Solar Sales Agent",
+          "description": "WhatsApp chatbot automating solar panel sales from consultation to quote generation, operating 24/7 in Mexico",
+          "metrics": [
+            "24/7 Availability",
+            "78% Increase in Conversion",
+            "80% Faster Response Time",
+            "Automated Quote Generation"
+          ]
+        },
+        "project3": {
+          "name": "Axen Capital - Financial Assistant",
+          "description": "Intelligent financial assistant with 8-layer AI analysis: intent classification, entity extraction, sentiment analysis, and more",
+          "metrics": [
+            "8 AI Analysis Layers",
+            "Multi-dimensional Context",
+            "Document Analysis",
+            "Real-time Analytics"
+          ]
+        },
+        "project4": {
+          "name": "AI WhatsApp Packages",
+          "description": "Commercial product offering: Micro ($10K setup), Professional ($50K), and Enterprise ($150K) packages for businesses",
+          "metrics": [
+            "3 Tier Packages",
+            "48h Setup (Micro)",
+            "CRM Integration",
+            "Predictive Analytics"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Ready to Deploy AI Agents?",
+        "description": "Let's discuss how conversational AI can transform your operations",
+        "button": "Schedule a Strategy Call"
+      }
+    },
+    "automation": {
+      "hero": {
+        "title": "Process Automation",
+        "subtitle": "n8n Workflows That Transform Operations",
+        "description": "Automate triage, routing, data pipelines, and business processes with visual workflows that integrate with your existing tools."
+      },
+      "useCases": {
+        "title": "Use Cases",
+        "subtitle": "Automation that delivers ROI from day one",
+        "case1": {
+          "title": "Email & Communication Triage",
+          "description": "Automatically route emails, messages, and inquiries to the right teams with AI classification"
+        },
+        "case2": {
+          "title": "Data Pipelines & ETL",
+          "description": "Extract, transform, and load data between systems automatically with scheduling and error handling"
+        },
+        "case3": {
+          "title": "CRM & Sales Automation",
+          "description": "Auto-update CRMs, send follow-ups, create tasks, and trigger workflows based on customer actions"
+        },
+        "case4": {
+          "title": "Notifications & Alerts",
+          "description": "Real-time notifications via Slack, Telegram, email when critical events occur in your systems"
+        }
+      },
+      "techStack": {
+        "title": "Technology Stack",
+        "orchestration": "Orchestration",
+        "orchestrationItems": [
+          "n8n Workflows",
+          "Custom Nodes",
+          "Webhook Triggers",
+          "Scheduled Jobs"
+        ],
+        "integrations": "Integrations",
+        "integrationsItems": [
+          "Google Workspace",
+          "Slack / Telegram",
+          "Airtable / Notion",
+          "PostgreSQL / MySQL"
+        ],
+        "ai": "AI Enhancement",
+        "aiItems": [
+          "OpenAI Classification",
+          "Sentiment Analysis",
+          "Entity Extraction",
+          "Smart Routing"
+        ],
+        "monitoring": "Monitoring",
+        "monitoringItems": [
+          "Error Tracking",
+          "Execution Logs",
+          "Performance Metrics",
+          "Alerting System"
+        ]
+      },
+      "process": {
+        "title": "Our Process",
+        "step1": {
+          "title": "Process Mapping",
+          "description": "Document current workflows, identify bottlenecks, and define automation opportunities"
+        },
+        "step2": {
+          "title": "Workflow Design",
+          "description": "Design n8n workflows with proper error handling, retries, and edge cases"
+        },
+        "step3": {
+          "title": "Integration Setup",
+          "description": "Connect all systems, APIs, and data sources with authentication and security"
+        },
+        "step4": {
+          "title": "Testing & QA",
+          "description": "Comprehensive testing with real data, edge cases, and failure scenarios"
+        },
+        "step5": {
+          "title": "Deploy & Monitor",
+          "description": "Production deployment with monitoring, alerts, and continuous optimization"
+        }
+      },
+      "realProjects": {
+        "title": "Real Projects",
+        "project1": {
+          "name": "Subastas La Silla Automation",
+          "description": "Automated bidding notifications, email campaigns, and YouTube livestream integration for high-traffic auction platform",
+          "metrics": [
+            "1,000+ Concurrent Users",
+            "Real-time Bid Notifications",
+            "Automated Email Campaigns",
+            "Zero Downtime Events"
+          ]
+        },
+        "project2": {
+          "name": "100+ n8n Workflow Templates",
+          "description": "Enterprise automation template library covering AI agents, RAG systems, CRM automation, DevOps, and content creation",
+          "metrics": [
+            "100+ Templates",
+            "15 Categories",
+            "Production-Ready",
+            "Modular & Reusable"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Ready to Automate Your Processes?",
+        "description": "Let's identify workflows that can save you time and money",
+        "button": "Schedule Discovery Call"
+      }
+    },
+    "webDevelopment": {
+      "hero": {
+        "title": "Full-Stack Web Development",
+        "subtitle": "Production-Ready Applications Built Right",
+        "description": "Modern web applications with React, Next.js, and TypeScript. From MVPs to enterprise systems handling thousands of concurrent users."
+      },
+      "useCases": {
+        "title": "Use Cases",
+        "subtitle": "Applications built for scale and performance",
+        "case1": {
+          "title": "Real-Time Platforms",
+          "description": "Auction platforms, live bidding, chat systems, and collaborative tools with WebSocket technology"
+        },
+        "case2": {
+          "title": "Enterprise Dashboards",
+          "description": "IoT monitoring, business intelligence, admin consoles, and data visualization for mission-critical operations"
+        },
+        "case3": {
+          "title": "E-Commerce & Marketplaces",
+          "description": "Online stores, booking systems, payment processing, and inventory management"
+        },
+        "case4": {
+          "title": "SaaS Products & MVPs",
+          "description": "Fast iteration from concept to production with modern frameworks and best practices"
+        }
+      },
+      "techStack": {
+        "title": "Technology Stack",
+        "frontend": "Frontend",
+        "frontendItems": [
+          "React / Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Framer Motion"
+        ],
+        "backend": "Backend",
+        "backendItems": [
+          "Node.js / Python",
+          "Django / FastAPI",
+          "PostgreSQL / MySQL",
+          "Redis Caching"
+        ],
+        "realtime": "Real-Time",
+        "realtimeItems": [
+          "WebSockets",
+          "Server-Sent Events",
+          "SignalR",
+          "Pub/Sub Systems"
+        ],
+        "infrastructure": "Infrastructure",
+        "infrastructureItems": [
+          "AWS / GCP / Azure",
+          "Docker / Kubernetes",
+          "CI/CD Pipelines",
+          "CDN & Caching"
+        ]
+      },
+      "process": {
+        "title": "Our Process",
+        "step1": {
+          "title": "Requirements & Design",
+          "description": "Gather requirements, create wireframes, and design system architecture"
+        },
+        "step2": {
+          "title": "Agile Development",
+          "description": "2-week sprints with daily standups, code reviews, and continuous integration"
+        },
+        "step3": {
+          "title": "Quality Assurance",
+          "description": "Unit tests, integration tests, performance testing, and security audits"
+        },
+        "step4": {
+          "title": "Deployment & DevOps",
+          "description": "Automated deployments, monitoring, logging, and infrastructure as code"
+        },
+        "step5": {
+          "title": "Maintenance & Support",
+          "description": "Ongoing support, bug fixes, feature updates, and performance optimization"
+        }
+      },
+      "realProjects": {
+        "title": "Real Projects",
+        "project1": {
+          "name": "Wenco Mining Platform (Hitachi)",
+          "description": "Enterprise IoT system for mission-critical mining operations with real-time telemetry across continents. Led frontend team for 4+ years.",
+          "metrics": [
+            "Multi-Continent Deployment",
+            "99.9% Uptime SLA",
+            "Real-Time Telemetry",
+            "15+ Engineers Managed"
+          ]
+        },
+        "project2": {
+          "name": "Subastas La Silla",
+          "description": "Real-time auction platform supporting 1,000+ concurrent users during live horse auctions with WebSocket bidding",
+          "metrics": [
+            "1,000+ Concurrent Users",
+            "Real-Time Bidding",
+            "Zero Downtime",
+            "Django + Nuxt.js"
+          ]
+        },
+        "project3": {
+          "name": "Radical I/O - Disney Movie Insiders",
+          "description": "Enabled Disney Movie Insiders to exchange points online for movie tickets and merchandise with frontend architecture design",
+          "metrics": [
+            "Disney Partnership",
+            "Points Exchange System",
+            "E-commerce Integration",
+            "UI/UX Delivery"
+          ]
+        },
+        "project4": {
+          "name": "Radical I/O - MyRichmond",
+          "description": "Streamlined citizen interactions with City of Richmond: centralized hub for taxes, utilities, garbage collection, recycling with feedback mechanisms",
+          "metrics": [
+            "Municipal Platform",
+            "Citizen Services",
+            "Search & Calendar",
+            "Feedback Systems"
+          ]
+        },
+        "project5": {
+          "name": "Central 1 Credit Union - Payroll Solutions",
+          "description": "Small business payroll solutions for credit unions. Led 5 co-ops and 2 junior developers as Scrum Master for 7-member team",
+          "metrics": [
+            "2+ Years Project",
+            "Team Leadership",
+            "Angular Migration",
+            "WCAG Compliance"
+          ]
+        },
+        "project6": {
+          "name": "Sage Software - Mobile Services",
+          "description": "Lead web developer for 6+ years developing Sage Mobile Services, Android app, and multiple web applications with automated testing",
+          "metrics": [
+            "6+ Years Tenure",
+            "Android + Web",
+            "Lead Developer",
+            "Selenium Automation"
+          ]
+        },
+        "project7": {
+          "name": "Radiant Communications - OSS Platform",
+          "description": "Integrated web-based operating systems supporting business processes. Built customer-facing portal for trouble tickets replacing manual emails",
+          "metrics": [
+            "ASP.NET MVC5",
+            "Customer Portal",
+            "Ticket Tracker",
+            "Real-time Alerts"
+          ]
+        },
+        "project8": {
+          "name": "Unity Technologies - Robotics IDE",
+          "description": "Browser-based IDE for Tethys education platform enabling K-12 students to program Pepper robots (SoftBank partnership)",
+          "metrics": [
+            "Browser-Based Programming",
+            "K-12 Education",
+            "React + TypeScript",
+            "No Installation"
+          ]
+        },
+        "project9": {
+          "name": "Concurso La Silla",
+          "description": "International equestrian competition platform with Boletia ticketing integration and multilingual content",
+          "metrics": [
+            "2,000+ Tickets Sold",
+            "50+ Sponsors",
+            "90% Overhead Reduction",
+            "International Reach"
+          ]
+        },
+        "project10": {
+          "name": "PEMT Logística",
+          "description": "Complete digital transformation: website, email infrastructure, WhatsApp integration, and lead generation pipeline from scratch",
+          "metrics": [
+            "Digital Transformation",
+            "5+ Email Accounts",
+            "WhatsApp Integration",
+            "14K MXN Budget"
+          ]
+        },
+        "project11": {
+          "name": "Congreso Internacional de Turismo",
+          "description": "Academic conference website with registration, speaker profiles, and Boletia integration for multi-day event",
+          "metrics": [
+            "Multi-day Program",
+            "Speaker Profiles",
+            "Group Discounts",
+            "SEO Optimized"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Ready to Build Your Application?",
+        "description": "Let's turn your vision into a production-ready system",
+        "button": "Schedule Technical Call"
+      }
+    },
+    "consulting": {
+      "hero": {
+        "title": "Technical Consulting & Leadership",
+        "subtitle": "Strategic Technology Guidance from the Trenches",
+        "description": "15+ years of hands-on experience leading teams, architecting systems, and delivering results across Mexico, Canada, Japan, and Europe."
+      },
+      "useCases": {
+        "title": "Services",
+        "subtitle": "Strategic guidance backed by real-world execution",
+        "case1": {
+          "title": "Technical Leadership",
+          "description": "Interim CTO, technical team building, hiring, onboarding, and mentorship for growing companies"
+        },
+        "case2": {
+          "title": "Architecture & System Design",
+          "description": "System architecture reviews, scalability planning, technology selection, and migration strategies"
+        },
+        "case3": {
+          "title": "Agile Coaching",
+          "description": "Scrum Master services, agile transformation, process optimization, and team productivity improvement"
+        },
+        "case4": {
+          "title": "Code Reviews & Audits",
+          "description": "Code quality assessments, security audits, performance optimization, and technical debt reduction"
+        }
+      },
+      "experience": {
+        "title": "Experience",
+        "companies": "Enterprise Experience",
+        "companiesItems": [
+          "Wenco (Hitachi) - 4+ years",
+          "Unity Technologies",
+          "Central 1 Credit Union",
+          "Sage Software - 6+ years"
+        ],
+        "leadership": "Leadership",
+        "leadershipItems": [
+          "Managed 15+ Engineers",
+          "Led 3 Overseas Teams",
+          "Scrum Master for 7 Teams",
+          "Mentored 20+ Developers"
+        ],
+        "technical": "Technical Expertise",
+        "technicalItems": [
+          "Full-Stack Development",
+          "AI/ML Integration",
+          "Cloud Architecture",
+          "IoT & Real-Time Systems"
+        ],
+        "global": "Global Collaboration",
+        "globalItems": [
+          "Mexico Operations",
+          "Canada & US Markets",
+          "India Team Management",
+          "Europe & Japan Experience"
+        ]
+      },
+      "process": {
+        "title": "Engagement Models",
+        "step1": {
+          "title": "Strategic Advisory",
+          "description": "Monthly retainer for ongoing technical guidance, architecture reviews, and decision support"
+        },
+        "step2": {
+          "title": "Interim Leadership",
+          "description": "Part-time or full-time CTO/VP Engineering role for 3-12 months during transitions or growth"
+        },
+        "step3": {
+          "title": "Project-Based",
+          "description": "Fixed-scope engagements for architecture design, audits, or specific technical initiatives"
+        },
+        "step4": {
+          "title": "Team Augmentation",
+          "description": "Embedded technical lead working alongside your team to deliver while building internal capability"
+        }
+      },
+      "realProjects": {
+        "title": "Real Projects",
+        "project1": {
+          "name": "EducarUno - Technical Instructor",
+          "description": "Led web development and AI curriculum for 200+ students (ages 12-18) over 2 years in Mexican EdTech platform",
+          "metrics": [
+            "200+ Students Taught",
+            "95% Retention Rate",
+            "2 Years Experience",
+            "HTML/CSS/JS + AI/NLP"
+          ]
+        },
+        "project2": {
+          "name": "AI Course for Teachers",
+          "description": "Developed complete AI fundamentals course for high school and university teachers with interactive methodology",
+          "metrics": [
+            "Teacher Training",
+            "60min Module Developed",
+            "Interactive Activities",
+            "Ethics & Privacy Focus"
+          ]
+        },
+        "project3": {
+          "name": "Government of Canada RFP Strategy",
+          "description": "Strategic consulting for government contracts through SAP Ariba, MERX, CanadaBuys, and BC Bid platforms",
+          "metrics": [
+            "Federal Opportunities",
+            "Provincial Contracts",
+            "Standing Offers",
+            "CRA Registered"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Need Strategic Technical Guidance?",
+        "description": "Let's discuss how 15+ years of experience can accelerate your success",
+        "button": "Schedule Strategy Session"
+      }
     }
   }
 }
