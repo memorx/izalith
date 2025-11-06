@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "getStarted": "Comenzar",
+    "aiAgents": "Agentes IA",
+    "automation": "Automatización",
+    "webDevelopment": "Desarrollo Web",
+    "consulting": "Consultoría"
+  },
+  "hero": {
+    "title": "Izalith",
+    "subtitle": "Ingeniería de Despliegue Directo",
+    "tagline": "Agentes IA • Automatización • Integración",
+    "exploreServices": "Explorar Servicios",
+    "viewProjects": "Ver Proyectos"
+  },
+  "stats": {
+    "yearsExperience": "Años de Experiencia",
+    "activeUsers": "Usuarios IA Activos",
+    "uptime": "SLA de Disponibilidad",
+    "countries": "Países Atendidos"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones de ingeniería integradas que transforman tus operaciones",
+    "aiAgents": {
+      "title": "Agentes IA",
+      "description": "IA conversacional bilingüe en WhatsApp, voz y canales web"
+    },
+    "automation": {
+      "title": "Automatización",
+      "description": "Flujos de trabajo n8n para clasificación, enrutamiento y automatización de procesos"
+    },
+    "dataIntegration": {
+      "title": "Integración de Datos",
+      "description": "Pipelines ETL, integraciones API y sincronización en tiempo real"
+    },
+    "fullStack": {
+      "title": "Desarrollo Full-Stack",
+      "description": "Aplicaciones React, Node.js, TypeScript con arquitectura moderna"
+    }
+  },
+  "portfolio": {
+    "title": "Trabajo Destacado",
+    "subtitle": "Soluciones del mundo real entregando resultados medibles",
+    "viewAll": "Ver Todos los Proyectos",
+    "subastas": {
+      "title": "Subastas La Silla",
+      "subtitle": "Plataforma de Subastas en Tiempo Real",
+      "description": "1,000+ usuarios concurrentes soportados durante subastas de caballos en vivo sin caídas",
+      "tech": "Django, Nuxt.js, PostgreSQL, Redis, AWS"
+    },
+    "madeByHumans": {
+      "title": "Made by Humans AI",
+      "subtitle": "Plataforma de Agentes IA Bilingües",
+      "description": "10,000+ usuarios activos en WhatsApp, Telegram y canales de voz",
+      "tech": "OpenAI, Claude, n8n, TypeScript, GCP"
+    },
+    "wenco": {
+      "title": "Plataforma Minera Wenco",
+      "subtitle": "Sistema IoT Empresarial",
+      "description": "Plataforma de operaciones mineras críticas con telemetría en tiempo real a través de continentes",
+      "tech": "React, Azure IoT, C#, Kubernetes"
+    }
+  },
+  "pricing": {
+    "title": "Precios Transparentes",
+    "subtitle": "Soluciones de Agentes IA y Automatización",
+    "note": "Atendiendo clientes en México, Canadá e internacionalmente. Precios en USD disponibles bajo solicitud.",
+    "starter": {
+      "name": "Inicial",
+      "setup": "$8,000 - $10,000 MXN",
+      "monthly": "$2,500 - $3,500 MXN",
+      "feature1": "Un canal (WhatsApp o Web)",
+      "feature2": "Base de conocimiento básica",
+      "feature3": "500 conversaciones/mes",
+      "feature4": "Soporte por email",
+      "ideal": "Pequeñas empresas iniciando con IA"
+    },
+    "professional": {
+      "name": "Profesional",
+      "setup": "$12,000 - $15,000 MXN",
+      "monthly": "$4,500 - $6,000 MXN",
+      "feature1": "Multi-canal (WhatsApp + Web + Voz)",
+      "feature2": "NLP avanzado e integraciones",
+      "feature3": "2,000 conversaciones/mes",
+      "feature4": "Transferencia a humano incluida",
+      "feature5": "Soporte prioritario",
+      "ideal": "Empresas en crecimiento escalando operaciones",
+      "badge": "Más Popular"
+    },
+    "enterprise": {
+      "name": "Empresarial",
+      "setup": "Precio personalizado",
+      "monthly": "Precio personalizado",
+      "feature1": "Conversaciones ilimitadas",
+      "feature2": "Integraciones completamente personalizadas",
+      "feature3": "Soporte dedicado",
+      "feature4": "Garantías de SLA",
+      "feature5": "Opciones on-premise",
+      "ideal": "Operaciones grandes con necesidades complejas"
+    },
+    "setupLabel": "Configuración",
+    "monthlyLabel": "Mensual",
+    "perfectFor": "Perfecto para:",
+    "getStarted": "Comenzar",
+    "contactQuote": "Contactar para Cotización"
+  },
+  "techStack": {
+    "title": "Stack Tecnológico",
+    "subtitle": "Tecnologías modernas para soluciones escalables y listas para producción"
+  },
+  "cta": {
+    "title": "¿Listo para Construir?",
+    "subtitle": "Trabajemos juntos para integrar, definir y lanzar tu próxima solución",
+    "schedule": "Agendar Consulta",
+    "email": "guillermo.sanchezy@gmail.com"
+  },
+  "footer": {
+    "copyright": "© 2025 Izalith • Made by Humans Digital",
+    "location": "Vancouver, BC • Monterrey, NL"
+  },
+  "whatsapp": {
+    "chatWithUs": "Chatea con nosotros",
+    "message": "¡Hola! Estoy interesado en conocer más sobre sus servicios."
+  },
+  "pages": {
+    "about": {
+      "title": "Acerca de - En Construcción"
+    },
+    "contact": {
+      "title": "Contacto - En Construcción"
+    },
+    "portfolio": {
+      "title": "Portafolio - En Construcción"
+    },
+    "aiAgents": {
+      "title": "Agentes IA - En Construcción"
+    },
+    "automation": {
+      "title": "Automatización - En Construcción"
+    },
+    "webDevelopment": {
+      "title": "Desarrollo Web - En Construcción"
+    },
+    "consulting": {
+      "title": "Consultoría - En Construcción"
+    }
+  }
+}

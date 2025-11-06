@@ -1,12 +1,15 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations('hero');
+  const locale = useLocale();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -64,7 +67,7 @@ export default function HeroSection() {
           }}
         >
           <h1 className="text-7xl md:text-8xl font-bold mb-4 bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Izalith
+            {t('title')}
           </h1>
         </div>
 
@@ -75,9 +78,9 @@ export default function HeroSection() {
           }}
         >
           <p className="text-2xl md:text-3xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Forward-Deployed Engineering
+            {t('subtitle')}
             <span className="block text-slate-400 text-xl mt-2">
-              AI Agents • Automation • Integration
+              {t('tagline')}
             </span>
           </p>
         </div>
@@ -94,7 +97,7 @@ export default function HeroSection() {
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/70 transition-all duration-300 hover:scale-105"
             onClick={scrollToServices}
           >
-            Explore Services
+            {t('exploreServices')}
             <ArrowRight className="ml-2" />
           </Button>
           <Button
@@ -102,7 +105,7 @@ export default function HeroSection() {
             variant="outline"
             className="border-slate-700 text-slate-200 hover:bg-slate-800 px-8 py-6 text-lg rounded-xl backdrop-blur-sm"
           >
-            View Projects
+            {t('viewProjects')}
           </Button>
         </div>
 

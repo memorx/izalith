@@ -2,28 +2,40 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { useTranslations, useLocale } from 'next-intl';
+import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations('nav');
+  const locale = useLocale();
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: t('home'), href: `/${locale}` },
+    { name: t('about'), href: `/${locale}/about` },
     {
-      name: 'Services',
+      name: t('services'),
       href: '#',
       submenu: [
-        { name: 'AI Agents', href: '/services/ai-agents' },
-        { name: 'Automation', href: '/services/automation' },
-        { name: 'Web Development', href: '/services/web-development' },
-        { name: 'Consulting', href: '/services/consulting' }
+        { name: t('aiAgents'), href: `/${locale}/services/ai-agents` },
+        { name: t('automation'), href: `/${locale}/services/automation` },
+        {
+          name: t('webDevelopment'),
+          href: `/${locale}/services/web-development`
+        },
+        { name: t('consulting'), href: `/${locale}/services/consulting` }
       ]
     },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' }
+    { name: t('portfolio'), href: `/${locale}/portfolio` },
+    { name: t('contact'), href: `/${locale}/contact` }
   ];
+
+  const toggleLocale = () => {
+    const newLocale = locale === 'en' ? 'es' : 'en';
+    const currentPath = window.location.pathname.replace(`/${locale}`, '');
+    window.location.href = `/${newLocale}${currentPath}`;
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
@@ -31,7 +43,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link
-            href="/"
+            href={`/${locale}`}
             className="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
           >
             Izalith
@@ -64,8 +76,20 @@ export default function Navbar() {
                 )}
               </div>
             ))}
+
+            {/* Language Toggle */}
+            <button
+              onClick={toggleLocale}
+              className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors"
+            >
+              <Globe className="w-4 h-4" />
+              <span className="text-sm font-medium">
+                {locale.toUpperCase()}
+              </span>
+            </button>
+
             <Button className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
-              Get Started
+              {t('getStarted')}
             </Button>
           </div>
 
@@ -110,8 +134,20 @@ export default function Navbar() {
                 )}
               </div>
             ))}
+
+            {/* Mobile Language Toggle */}
+            <button
+              onClick={toggleLocale}
+              className="flex items-center gap-2 py-2 text-slate-300 hover:text-cyan-400"
+            >
+              <Globe className="w-4 h-4" />
+              <span className="text-sm font-medium">
+                {locale === 'en' ? 'Español' : 'English'}
+              </span>
+            </button>
+
             <Button className="w-full mt-4 bg-linear-to-r from-blue-600 to-cyan-600">
-              Get Started
+              {t('getStarted')}
             </Button>
           </div>
         )}

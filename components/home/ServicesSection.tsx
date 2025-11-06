@@ -1,36 +1,35 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageSquare, Zap, Database, Code } from 'lucide-react';
 
 export default function ServicesSection() {
+  const t = useTranslations('services');
+
   const services = [
     {
       icon: MessageSquare,
-      title: 'AI Agents',
-      description:
-        'Bilingual conversational AI across WhatsApp, voice, and web channels',
+      title: t('aiAgents.title'),
+      description: t('aiAgents.description'),
       color: 'from-blue-500 to-cyan-500'
     },
     {
       icon: Zap,
-      title: 'Automation',
-      description:
-        'n8n workflows for triage, routing, and business process automation',
+      title: t('automation.title'),
+      description: t('automation.description'),
       color: 'from-cyan-500 to-teal-500'
     },
     {
       icon: Database,
-      title: 'Data Integration',
-      description:
-        'ETL pipelines, API integrations, and real-time data synchronization',
+      title: t('dataIntegration.title'),
+      description: t('dataIntegration.description'),
       color: 'from-teal-500 to-emerald-500'
     },
     {
       icon: Code,
-      title: 'Full-Stack Dev',
-      description:
-        'React, Node.js, TypeScript applications with modern architecture',
+      title: t('fullStack.title'),
+      description: t('fullStack.description'),
       color: 'from-emerald-500 to-green-500'
     }
   ];
@@ -39,10 +38,10 @@ export default function ServicesSection() {
     <section id="services" className="py-32 px-6 relative">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-6 bg-linear-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
-          Services
+          {t('title')}
         </h2>
         <p className="text-xl text-slate-400 text-center mb-16 max-w-2xl mx-auto">
-          Embedded engineering solutions that transform your business operations
+          {t('subtitle')}
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

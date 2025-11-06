@@ -1,10 +1,12 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppWidget() {
-  const whatsappNumber = '7782281225'; // Tu número
-  const message = "Hi! I'm interested in learning more about your services.";
+  const t = useTranslations('whatsapp');
+  const whatsappNumber = '7782281225';
+  const message = t('message');
 
   const handleClick = () => {
     window.open(
@@ -21,7 +23,7 @@ export default function WhatsAppWidget() {
     >
       <MessageCircle className="w-6 h-6" />
       <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-        Chat with us
+        {t('chatWithUs')}
       </span>
     </button>
   );

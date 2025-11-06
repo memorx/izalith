@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/layout/Navbar';
-import WhatsAppWidget from '@/components/layout/WhatsAppWidget';
 
 const geist = Geist({
   variable: '--font-geist-sans',
@@ -27,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geist.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />
-        <div className="pt-20">{children}</div>
-        <WhatsAppWidget />
+        {children}
       </body>
     </html>
   );

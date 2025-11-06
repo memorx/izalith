@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "aiAgents": "AI Agents",
+    "automation": "Automation",
+    "webDevelopment": "Web Development",
+    "consulting": "Consulting"
+  },
+  "hero": {
+    "title": "Izalith",
+    "subtitle": "Forward-Deployed Engineering",
+    "tagline": "AI Agents • Automation • Integration",
+    "exploreServices": "Explore Services",
+    "viewProjects": "View Projects"
+  },
+  "stats": {
+    "yearsExperience": "Years Experience",
+    "activeUsers": "Active AI Users",
+    "uptime": "Uptime SLA",
+    "countries": "Countries Served"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Embedded engineering solutions that transform your business operations",
+    "aiAgents": {
+      "title": "AI Agents",
+      "description": "Bilingual conversational AI across WhatsApp, voice, and web channels"
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "n8n workflows for triage, routing, and business process automation"
+    },
+    "dataIntegration": {
+      "title": "Data Integration",
+      "description": "ETL pipelines, API integrations, and real-time data synchronization"
+    },
+    "fullStack": {
+      "title": "Full-Stack Dev",
+      "description": "React, Node.js, TypeScript applications with modern architecture"
+    }
+  },
+  "portfolio": {
+    "title": "Featured Work",
+    "subtitle": "Real-world solutions delivering measurable results",
+    "viewAll": "View All Projects",
+    "subastas": {
+      "title": "Subastas La Silla",
+      "subtitle": "Real-Time Auction Platform",
+      "description": "1,000+ concurrent users supported during live horse auctions with zero downtime",
+      "tech": "Django, Nuxt.js, PostgreSQL, Redis, AWS"
+    },
+    "madeByHumans": {
+      "title": "Made by Humans AI",
+      "subtitle": "Bilingual AI Agent Platform",
+      "description": "10,000+ active users across WhatsApp, Telegram, and Voice channels",
+      "tech": "OpenAI, Claude, n8n, TypeScript, GCP"
+    },
+    "wenco": {
+      "title": "Wenco Mining Platform",
+      "subtitle": "Enterprise IoT System",
+      "description": "Mission-critical mining operations platform with real-time telemetry across continents",
+      "tech": "React, Azure IoT, C#, Kubernetes"
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "AI Agents & Automation Solutions",
+    "note": "Serving clients in Mexico, Canada, and internationally. USD pricing available upon request.",
+    "starter": {
+      "name": "Starter",
+      "setup": "$8,000 - $10,000 MXN",
+      "monthly": "$2,500 - $3,500 MXN",
+      "feature1": "Single channel (WhatsApp or Web)",
+      "feature2": "Basic knowledge base",
+      "feature3": "500 conversations/month",
+      "feature4": "Email support",
+      "ideal": "Small businesses starting with AI"
+    },
+    "professional": {
+      "name": "Professional",
+      "setup": "$12,000 - $15,000 MXN",
+      "monthly": "$4,500 - $6,000 MXN",
+      "feature1": "Multi-channel (WhatsApp + Web + Voice)",
+      "feature2": "Advanced NLP & integrations",
+      "feature3": "2,000 conversations/month",
+      "feature4": "Human handoff included",
+      "feature5": "Priority support",
+      "ideal": "Growing companies scaling operations",
+      "badge": "Most Popular"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "setup": "Custom pricing",
+      "monthly": "Custom pricing",
+      "feature1": "Unlimited conversations",
+      "feature2": "Full custom integrations",
+      "feature3": "Dedicated support",
+      "feature4": "SLA guarantees",
+      "feature5": "On-premise options",
+      "ideal": "Large operations with complex needs"
+    },
+    "setupLabel": "Setup",
+    "monthlyLabel": "Monthly",
+    "perfectFor": "Perfect for:",
+    "getStarted": "Get Started",
+    "contactQuote": "Contact for Quote"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Modern technologies for scalable, production-ready solutions"
+  },
+  "cta": {
+    "title": "Ready to Build?",
+    "subtitle": "Let's embed, scope, and ship your next solution together",
+    "schedule": "Schedule Consultation",
+    "email": "guillermo.sanchezy@gmail.com"
+  },
+  "footer": {
+    "copyright": "© 2025 Izalith • Made by Humans Digital",
+    "location": "Vancouver, BC • Monterrey, NL"
+  },
+  "whatsapp": {
+    "chatWithUs": "Chat with us",
+    "message": "Hi! I'm interested in learning more about your services."
+  },
+  "pages": {
+    "about": {
+      "title": "About - Under Construction"
+    },
+    "contact": {
+      "title": "Contact - Under Construction"
+    },
+    "portfolio": {
+      "title": "Portfolio - Under Construction"
+    },
+    "aiAgents": {
+      "title": "AI Agents - Under Construction"
+    },
+    "automation": {
+      "title": "Automation - Under Construction"
+    },
+    "webDevelopment": {
+      "title": "Web Development - Under Construction"
+    },
+    "consulting": {
+      "title": "Consulting - Under Construction"
+    }
+  }
+}

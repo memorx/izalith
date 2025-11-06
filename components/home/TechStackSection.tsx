@@ -1,6 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function TechStackSection() {
+  const t = useTranslations('techStack');
+
   const technologies = [
     'React',
     'Node.js',
@@ -20,10 +24,10 @@ export default function TechStackSection() {
     <section className="py-32 px-6 bg-slate-900/30">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-6 bg-linear-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent">
-          Tech Stack
+          {t('title')}
         </h2>
         <p className="text-xl text-slate-400 text-center mb-16 max-w-2xl mx-auto">
-          Modern technologies for scalable, production-ready solutions
+          {t('subtitle')}
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
