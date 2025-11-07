@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
   Users2,
@@ -17,6 +17,19 @@ import { Button } from '@/components/ui/button';
 
 export default function ConsultingPage() {
   const t = useTranslations('services.consulting');
+  const locale = useLocale();
+
+  // WhatsApp link for Consulting service
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, estoy interesado en los servicios de Consultoría de Izalith. Me gustaría discutir cómo pueden ayudar a mi empresa con liderazgo técnico y transformación digital.',
+      en: "Hi, I'm interested in Izalith's Consulting services. I'd like to discuss how you can help my company with technical leadership and digital transformation."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const services = [
     {
@@ -114,8 +127,15 @@ export default function ConsultingPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -415,8 +435,15 @@ export default function ConsultingPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>

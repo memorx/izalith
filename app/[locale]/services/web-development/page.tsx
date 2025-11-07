@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
   Code2,
@@ -18,6 +18,19 @@ import { Button } from '@/components/ui/button';
 
 export default function WebDevelopmentPage() {
   const t = useTranslations('services.webDevelopment');
+  const locale = useLocale();
+
+  // WhatsApp link for Web Development service
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, estoy interesado en los servicios de Desarrollo Web de Izalith. Me gustaría discutir cómo pueden ayudar a construir aplicaciones web escalables para mi negocio.',
+      en: "Hi, I'm interested in Izalith's Web Development services. I'd like to discuss how you can help build scalable web applications for my business."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const useCases = [
     {
@@ -88,9 +101,6 @@ export default function WebDevelopmentPage() {
     }
   ];
 
-  const project1Metrics = t.raw('realProjects.project1.metrics') as string[];
-  const project2Metrics = t.raw('realProjects.project2.metrics') as string[];
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
       {/* Hero Section */}
@@ -122,8 +132,15 @@ export default function WebDevelopmentPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -250,7 +267,6 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* Real Projects Section */}
-      {/* Real Projects Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -334,283 +350,105 @@ export default function WebDevelopmentPage() {
 
             {/* Other Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Project 3 - Disney */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <ShoppingCart className="w-6 h-6 text-blue-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project3.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project3.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project3.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-blue-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
+              {/* Projects 3-11 */}
+              {[3, 4, 5, 6, 7, 8, 9, 10, 11].map((projectNum) => {
+                const projectKey = `project${projectNum}`;
+                const colors = [
+                  {
+                    gradient: 'from-blue-600/20 to-purple-600/20',
+                    border: 'border-blue-500/30',
+                    text: 'text-blue-400',
+                    icon: ShoppingCart
+                  },
+                  {
+                    gradient: 'from-green-600/20 to-emerald-600/20',
+                    border: 'border-green-500/30',
+                    text: 'text-green-400',
+                    icon: Globe
+                  },
+                  {
+                    gradient: 'from-orange-600/20 to-red-600/20',
+                    border: 'border-orange-500/30',
+                    text: 'text-orange-400',
+                    icon: Users
+                  },
+                  {
+                    gradient: 'from-purple-600/20 to-pink-600/20',
+                    border: 'border-purple-500/30',
+                    text: 'text-purple-400',
+                    icon: Rocket
+                  },
+                  {
+                    gradient: 'from-cyan-600/20 to-blue-600/20',
+                    border: 'border-cyan-500/30',
+                    text: 'text-cyan-400',
+                    icon: Code2
+                  },
+                  {
+                    gradient: 'from-pink-600/20 to-purple-600/20',
+                    border: 'border-pink-500/30',
+                    text: 'text-pink-400',
+                    icon: Zap
+                  },
+                  {
+                    gradient: 'from-emerald-600/20 to-green-600/20',
+                    border: 'border-emerald-500/30',
+                    text: 'text-emerald-400',
+                    icon: BarChart3
+                  },
+                  {
+                    gradient: 'from-red-600/20 to-orange-600/20',
+                    border: 'border-red-500/30',
+                    text: 'text-red-400',
+                    icon: Globe
+                  },
+                  {
+                    gradient: 'from-indigo-600/20 to-blue-600/20',
+                    border: 'border-indigo-500/30',
+                    text: 'text-indigo-400',
+                    icon: Users
+                  }
+                ];
+                const colorIndex = projectNum - 3;
+                const IconComponent = colors[colorIndex].icon;
 
-              {/* Project 4 - MyRichmond */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.05 }}
-                className="bg-gradient-to-br from-green-600/20 to-emerald-600/20 border border-green-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Globe className="w-6 h-6 text-green-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project4.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project4.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project4.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-green-400">{metric}</p>
+                return (
+                  <motion.div
+                    key={projectNum}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: (projectNum - 3) * 0.05 }}
+                    className={`bg-gradient-to-br ${colors[colorIndex].gradient} border ${colors[colorIndex].border} rounded-xl p-6`}
+                  >
+                    <div className="flex items-start gap-3 mb-4">
+                      <IconComponent
+                        className={`w-6 h-6 ${colors[colorIndex].text} flex-shrink-0`}
+                      />
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">
+                          {t(`realProjects.${projectKey}.name`)}
+                        </h3>
+                        <p className="text-slate-300 text-sm mb-4">
+                          {t(`realProjects.${projectKey}.description`)}
+                        </p>
                       </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 5 - Central 1 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="bg-gradient-to-br from-orange-600/20 to-red-600/20 border border-orange-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Users className="w-6 h-6 text-orange-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project5.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project5.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project5.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-orange-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 6 - Sage */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.15 }}
-                className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Rocket className="w-6 h-6 text-purple-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project6.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project6.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project6.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-purple-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 7 - Radiant */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="bg-gradient-to-br from-cyan-600/20 to-blue-600/20 border border-cyan-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Code2 className="w-6 h-6 text-cyan-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project7.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project7.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project7.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-cyan-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 8 - Unity */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.25 }}
-                className="bg-gradient-to-br from-pink-600/20 to-purple-600/20 border border-pink-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Zap className="w-6 h-6 text-pink-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project8.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project8.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project8.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-pink-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 9 - Concurso */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="bg-gradient-to-br from-emerald-600/20 to-green-600/20 border border-emerald-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <BarChart3 className="w-6 h-6 text-emerald-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project9.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project9.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project9.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-emerald-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 10 - PEMT */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.35 }}
-                className="bg-gradient-to-br from-red-600/20 to-orange-600/20 border border-red-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Globe className="w-6 h-6 text-red-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project10.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project10.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project10.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-red-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Project 11 - Congreso */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-                className="bg-gradient-to-br from-indigo-600/20 to-blue-600/20 border border-indigo-500/30 rounded-xl p-6"
-              >
-                <div className="flex items-start gap-3 mb-4">
-                  <Users className="w-6 h-6 text-indigo-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t('realProjects.project11.name')}
-                    </h3>
-                    <p className="text-slate-300 text-sm mb-4">
-                      {t('realProjects.project11.description')}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {(t.raw('realProjects.project11.metrics') as string[]).map(
-                    (metric, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-indigo-400">{metric}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </motion.div>
+                    </div>
+                    <div className="space-y-2">
+                      {(
+                        t.raw(`realProjects.${projectKey}.metrics`) as string[]
+                      ).map((metric, index) => (
+                        <div key={index} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-3 h-3 text-green-400 flex-shrink-0 mt-0.5" />
+                          <p className={`text-xs ${colors[colorIndex].text}`}>
+                            {metric}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -635,8 +473,15 @@ export default function WebDevelopmentPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>

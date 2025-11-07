@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
   Brain,
@@ -17,6 +17,19 @@ import { Button } from '@/components/ui/button';
 
 export default function AIAgentsPage() {
   const t = useTranslations('services.aiAgents');
+  const locale = useLocale();
+
+  // WhatsApp link for AI Agents service
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, estoy interesado en los servicios de AI Agents de Izalith. Me gustaría agendar una llamada estratégica para discutir cómo pueden ayudar a mi negocio con IA conversacional.',
+      en: "Hi, I'm interested in Izalith's AI Agents services. I'd like to schedule a strategy call to discuss how you can help my business with conversational AI."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const useCases = [
     {
@@ -87,8 +100,6 @@ export default function AIAgentsPage() {
     }
   ];
 
-  const metrics = t.raw('realProjects.project1.metrics') as string[];
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
       {/* Hero Section */}
@@ -120,8 +131,15 @@ export default function AIAgentsPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -407,8 +425,15 @@ export default function AIAgentsPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>

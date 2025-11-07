@@ -1,12 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 
 export default function CTASection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const t = useTranslations('cta');
+  const locale = useLocale();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -17,6 +18,32 @@ export default function CTASection() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  // WhatsApp link with bilingual message
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, me gustaría agendar una consultoría gratuita para discutir cómo Izalith puede ayudar a transformar mi negocio con IA y automatización.',
+      en: "Hi, I'd like to schedule a free consultation to discuss how Izalith can help transform my business with AI and automation."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
+
+  // Email link
+  const emailAddress = 'guillermo@izalith.cc';
+  const emailSubject =
+    locale === 'es'
+      ? 'Consulta sobre servicios de Izalith'
+      : 'Inquiry about Izalith services';
+  const emailBody =
+    locale === 'es'
+      ? 'Hola Guillermo,\n\nMe gustaría saber más sobre los servicios de Izalith.\n\n'
+      : 'Hi Guillermo,\n\nI would like to learn more about Izalith services.\n\n';
+  const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+    emailSubject
+  )}&body=${encodeURIComponent(emailBody)}`;
 
   return (
     <section className="py-32 px-6 relative overflow-hidden">
@@ -41,15 +68,23 @@ export default function CTASection() {
           <Button
             size="lg"
             className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-10 py-7 text-xl rounded-xl shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/70 transition-all duration-300 hover:scale-105"
+            asChild
           >
-            {t('schedule')}
+            <a
+              href={getWhatsAppLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('schedule')}
+            </a>
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="border-slate-700 text-slate-200 hover:bg-slate-800 px-10 py-7 text-xl rounded-xl backdrop-blur-sm"
+            asChild
           >
-            {t('email')}
+            <a href={mailtoLink}>{t('email')}</a>
           </Button>
         </div>
       </div>

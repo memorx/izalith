@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
   Workflow,
@@ -17,6 +17,19 @@ import { Button } from '@/components/ui/button';
 
 export default function AutomationPage() {
   const t = useTranslations('services.automation');
+  const locale = useLocale();
+
+  // WhatsApp link for Automation service
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, estoy interesado en los servicios de Automatización de Izalith. Me gustaría discutir cómo pueden ayudar a optimizar los procesos de mi negocio.',
+      en: "Hi, I'm interested in Izalith's Automation services. I'd like to discuss how you can help optimize my business processes."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const useCases = [
     {
@@ -87,8 +100,6 @@ export default function AutomationPage() {
     }
   ];
 
-  const metrics = t.raw('realProjects.project1.metrics') as string[];
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
       {/* Hero Section */}
@@ -120,8 +131,15 @@ export default function AutomationPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -345,8 +363,15 @@ export default function AutomationPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>

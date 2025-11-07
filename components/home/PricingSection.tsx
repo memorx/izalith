@@ -1,12 +1,39 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Check, Sparkles } from 'lucide-react';
 
 export default function PricingSection() {
   const t = useTranslations('pricing');
+  const locale = useLocale();
+
+  // WhatsApp messages for each tier
+  const getWhatsAppLink = (tierKey: string) => {
+    const phoneNumber = '524432182586';
+
+    const messages: Record<string, { es: string; en: string }> = {
+      starter: {
+        es: 'Hola, estoy interesado en el plan Starter de AI Agents ($8,000-$10,000 MXN setup). Me gustaría agendar una consultoría gratuita para discutir cómo pueden ayudar a mi negocio.',
+        en: "Hi, I'm interested in the Starter AI Agents plan ($8,000-$10,000 MXN setup). I'd like to schedule a free consultation to discuss how you can help my business."
+      },
+      professional: {
+        es: 'Hola, estoy interesado en el plan Professional de AI Agents ($12,000-$15,000 MXN setup). Quiero escalar las operaciones de mi empresa con multi-channel AI. ¿Cuándo podemos platicar?',
+        en: "Hi, I'm interested in the Professional AI Agents plan ($12,000-$15,000 MXN setup). I want to scale my company's operations with multi-channel AI. When can we talk?"
+      },
+      enterprise: {
+        es: 'Hola, necesito una cotización Enterprise personalizada para AI Agents con integraciones custom y conversaciones ilimitadas. ¿Podemos agendar una llamada?',
+        en: 'Hi, I need a custom Enterprise quote for AI Agents with custom integrations and unlimited conversations. Can we schedule a call?'
+      }
+    };
+
+    const message =
+      locale === 'es' ? messages[tierKey].es : messages[tierKey].en;
+    const encodedMessage = encodeURIComponent(message);
+
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const tiers = [
     {
@@ -20,7 +47,8 @@ export default function PricingSection() {
         t('starter.feature4')
       ],
       ideal: t('starter.ideal'),
-      popular: false
+      popular: false,
+      tierKey: 'starter'
     },
     {
       name: t('professional.name'),
@@ -34,7 +62,8 @@ export default function PricingSection() {
         t('professional.feature5')
       ],
       ideal: t('professional.ideal'),
-      popular: true
+      popular: true,
+      tierKey: 'professional'
     },
     {
       name: t('enterprise.name'),
@@ -48,7 +77,8 @@ export default function PricingSection() {
         t('enterprise.feature5')
       ],
       ideal: t('enterprise.ideal'),
-      popular: false
+      popular: false,
+      tierKey: 'enterprise'
     }
   ];
 
@@ -126,10 +156,17 @@ export default function PricingSection() {
                       ? 'bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700'
                       : 'bg-slate-800 hover:bg-slate-700'
                   }`}
+                  asChild
                 >
-                  {tier.name === t('enterprise.name')
-                    ? t('contactQuote')
-                    : t('getStarted')}
+                  <a
+                    href={getWhatsAppLink(tier.tierKey)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {tier.tierKey === 'enterprise'
+                      ? t('contactQuote')
+                      : t('getStarted')}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
