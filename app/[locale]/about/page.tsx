@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
   Sparkles,
@@ -19,6 +19,19 @@ import { Button } from '@/components/ui/button';
 
 export default function AboutPage() {
   const t = useTranslations('about');
+  const locale = useLocale();
+
+  // WhatsApp link for About page CTA
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages: Record<string, string> = {
+      es: 'Hola, me gustaría discutir cómo Izalith puede ayudar a mi empresa. ¿Podemos agendar una consulta?',
+      en: "Hi, I'd like to discuss how Izalith can help my company. Can we schedule a consultation?"
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
 
   const stats = [
     { value: '15+', label: t('hero.yearsLabel') },
@@ -275,8 +288,15 @@ export default function AboutPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-6 text-lg"
+              asChild
             >
-              {t('cta.button')}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cta.button')}
+              </a>
             </Button>
           </motion.div>
         </div>
