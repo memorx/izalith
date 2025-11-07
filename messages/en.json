@@ -962,5 +962,51 @@
         ]
       }
     }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's Talk",
+      "subtitle": "Have a project in mind? I offer specialized consulting in full-stack development, AI agents, and automation.",
+      "responseTime": "I respond within 4-48 hours"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "description": "Whether you need an AI agent, process automation, or full-stack web development, I'm here to help.",
+      "button": "Send Message"
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "company": "Company (optional)",
+      "service": "Service of interest",
+      "services": {
+        "ai": "AI Agents",
+        "automation": "Automation",
+        "web": "Web Development",
+        "consulting": "Consulting",
+        "other": "Other"
+      },
+      "message": "Tell me about your project",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "info": {
+      "locations": {
+        "title": "Locations",
+        "morelia": "Morelia, Mexico (CST)",
+        "vancouver": "Vancouver, Canada (PST)"
+      },
+      "email": {
+        "title": "Email",
+        "description": "For proposals and projects"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "For urgent inquiries"
+      },
+      "social": {
+        "title": "Find me on"
+      }
+    }
   }
 }
