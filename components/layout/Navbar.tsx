@@ -35,16 +35,28 @@ export default function Navbar() {
     window.location.href = `/${newLocale}${currentPath}`;
   };
 
+  // WhatsApp message based on locale
+  const getWhatsAppLink = () => {
+    const phoneNumber = '524432182586';
+    const messages = {
+      es: 'Hola, estoy interesado en los servicios de IA y automatización de Izalith. Me gustaría agendar una consultoría gratuita.',
+      en: "Hello, I'm interested in Izalith's AI and automation services. I'd like to schedule a free consultation."
+    };
+    const message = locale === 'es' ? messages.es : messages.en;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link
-            href={`/${locale}`}
+            href={`/`}
             className="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
           >
-            Izalith
+            Izalith Consulting Corporation
           </Link>
 
           {/* Desktop Navigation */}
@@ -86,8 +98,18 @@ export default function Navbar() {
               </span>
             </button>
 
-            <Button className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
-              {t('getStarted')}
+            {/* Get Started Button - Opens WhatsApp */}
+            <Button
+              asChild
+              className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+            >
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('getStarted')}
+              </a>
             </Button>
           </div>
 
@@ -144,8 +166,19 @@ export default function Navbar() {
               </span>
             </button>
 
-            <Button className="w-full mt-4 bg-linear-to-r from-blue-600 to-cyan-600">
-              {t('getStarted')}
+            {/* Mobile Get Started Button - Opens WhatsApp */}
+            <Button
+              asChild
+              className="w-full mt-4 bg-linear-to-r from-blue-600 to-cyan-600"
+            >
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {t('getStarted')}
+              </a>
             </Button>
           </div>
         )}

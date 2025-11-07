@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Link } from '@/src/i18n/routing';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageSquare, Zap, Database, Code } from 'lucide-react';
 
@@ -12,25 +13,29 @@ export default function ServicesSection() {
       icon: MessageSquare,
       title: t('aiAgents.title'),
       description: t('aiAgents.description'),
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-blue-500 to-cyan-500',
+      href: '/services/ai-agents'
     },
     {
       icon: Zap,
       title: t('automation.title'),
       description: t('automation.description'),
-      color: 'from-cyan-500 to-teal-500'
+      color: 'from-cyan-500 to-teal-500',
+      href: '/services/automation'
     },
     {
       icon: Database,
       title: t('dataIntegration.title'),
       description: t('dataIntegration.description'),
-      color: 'from-teal-500 to-emerald-500'
+      color: 'from-teal-500 to-emerald-500',
+      href: '/services/consulting'
     },
     {
       icon: Code,
       title: t('fullStack.title'),
       description: t('fullStack.description'),
-      color: 'from-emerald-500 to-green-500'
+      color: 'from-emerald-500 to-green-500',
+      href: '/services/web-development'
     }
   ];
 
@@ -46,43 +51,44 @@ export default function ServicesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, idx) => (
-            <Card
-              key={idx}
-              className="group relative bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-slate-700 transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden"
-              style={{
-                transformStyle: 'preserve-3d',
-                transform: 'translateZ(0)'
-              }}
-              onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
-                const card = e.currentTarget;
-                const rect = card.getBoundingClientRect();
-                const x = (e.clientX - rect.left) / rect.width - 0.5;
-                const y = (e.clientY - rect.top) / rect.height - 0.5;
-                card.style.transform = `perspective(1000px) rotateY(${
-                  x * 15
-                }deg) rotateX(${-y * 15}deg) translateZ(20px)`;
-              }}
-              onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
-                e.currentTarget.style.transform = 'translateZ(0)';
-              }}
-            >
-              <div
-                className={`absolute inset-0 bg-linear-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-              />
-              <CardContent className="p-8 relative z-10">
+            <Link key={idx} href={service.href}>
+              <Card
+                className="group relative bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-slate-700 transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden h-full"
+                style={{
+                  transformStyle: 'preserve-3d',
+                  transform: 'translateZ(0)'
+                }}
+                onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
+                  const card = e.currentTarget;
+                  const rect = card.getBoundingClientRect();
+                  const x = (e.clientX - rect.left) / rect.width - 0.5;
+                  const y = (e.clientY - rect.top) / rect.height - 0.5;
+                  card.style.transform = `perspective(1000px) rotateY(${
+                    x * 15
+                  }deg) rotateX(${-y * 15}deg) translateZ(20px)`;
+                }}
+                onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
+                  e.currentTarget.style.transform = 'translateZ(0)';
+                }}
+              >
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-linear-to-br ${service.color} flex items-center justify-center mb-6 shadow-xl`}
-                >
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-slate-100">
-                  {service.title}
-                </h3>
-                <p className="text-slate-400 leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+                  className={`absolute inset-0 bg-linear-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
+                />
+                <CardContent className="p-8 relative z-10">
+                  <div
+                    className={`w-16 h-16 rounded-2xl bg-linear-to-br ${service.color} flex items-center justify-center mb-6 shadow-xl`}
+                  >
+                    <service.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3 text-slate-100">
+                    {service.title}
+                  </h3>
+                  <p className="text-slate-400 leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/src/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
@@ -34,7 +35,7 @@ export default function HeroSection() {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden"
     >
-      {/* Animated Grid Background - MÁS VISIBLE */}
+      {/* Animated Grid Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid más visible */}
         <div
@@ -52,32 +53,30 @@ export default function HeroSection() {
           }}
         />
 
-        {/* Floating orbs - más visibles y con más movimiento */}
+        {/* Floating orbs - SUAVE como luces de navidad */}
         <div
-          className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl"
+          className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full blur-3xl animate-glow-1"
           style={{
-            transform: `translate(${mousePosition.x * 40}px, ${
-              mousePosition.y * 40
-            }px)`,
-            transition: 'transform 0.6s ease-out'
+            background:
+              'radial-gradient(circle, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.2))',
+            opacity: 0.2
           }}
         />
         <div
-          className="absolute bottom-1/3 -right-20 w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-3xl"
+          className="absolute bottom-1/3 -right-20 w-[500px] h-[500px] rounded-full blur-3xl animate-glow-2"
           style={{
-            transform: `translate(${mousePosition.x * -40}px, ${
-              mousePosition.y * -40
-            }px)`,
-            transition: 'transform 0.6s ease-out'
+            background:
+              'radial-gradient(circle, rgba(6, 182, 212, 0.3), rgba(59, 130, 246, 0.2))',
+            opacity: 0.25
           }}
         />
         <div
-          className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-purple-500/15 rounded-full blur-3xl"
+          className="absolute top-1/2 left-1/2 w-[400px] h-[400px] rounded-full blur-3xl animate-glow-3"
           style={{
-            transform: `translate(-50%, -50%) translate(${
-              mousePosition.x * 30
-            }px, ${mousePosition.y * 30}px)`,
-            transition: 'transform 0.6s ease-out'
+            transform: 'translate(-50%, -50%)',
+            background:
+              'radial-gradient(circle, rgba(147, 51, 234, 0.25), rgba(236, 72, 153, 0.15))',
+            opacity: 0.15
           }}
         />
 
@@ -138,8 +137,9 @@ export default function HeroSection() {
             size="lg"
             variant="outline"
             className="border-slate-700 text-slate-200 hover:bg-slate-800 px-8 py-6 text-lg rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
+            asChild
           >
-            {t('viewProjects')}
+            <Link href="/portfolio">{t('viewProjects')}</Link>
           </Button>
         </div>
 
@@ -153,6 +153,53 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* CSS Animations - SUAVES como luces de navidad */}
+      <style jsx>{`
+        @keyframes glow-1 {
+          0%,
+          100% {
+            opacity: 0.2;
+          }
+          50% {
+            opacity: 0.4;
+          }
+        }
+
+        @keyframes glow-2 {
+          0%,
+          100% {
+            opacity: 0.25;
+          }
+          50% {
+            opacity: 0.45;
+          }
+        }
+
+        @keyframes glow-3 {
+          0%,
+          100% {
+            opacity: 0.15;
+          }
+          50% {
+            opacity: 0.35;
+          }
+        }
+
+        .animate-glow-1 {
+          animation: glow-1 8s ease-in-out infinite;
+        }
+
+        .animate-glow-2 {
+          animation: glow-2 10s ease-in-out infinite;
+          animation-delay: 2s;
+        }
+
+        .animate-glow-3 {
+          animation: glow-3 12s ease-in-out infinite;
+          animation-delay: 4s;
+        }
+      `}</style>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+// app/[locale]/page.tsx
 import HeroSection from '@/components/home/HeroSection';
 import StatsSection from '@/components/home/StatsSection';
 import ServicesSection from '@/components/home/ServicesSection';

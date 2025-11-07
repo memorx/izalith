@@ -13,3 +13,66 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Animaciones para los blobs flotantes del Hero */
+@keyframes blob-slow {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+    opacity: 0.4;
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.35;
+  }
+}
+
+@keyframes blob-slow-delayed {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(0.9);
+    opacity: 0.35;
+  }
+  66% {
+    transform: translate(20px, -40px) scale(1.15);
+    opacity: 0.4;
+  }
+}
+
+@keyframes blob-slow-more {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.25;
+  }
+  33% {
+    transform: translate(-50%, -50%) translate(40px, 40px) scale(1.2);
+    opacity: 0.3;
+  }
+  66% {
+    transform: translate(-50%, -50%) translate(-30px, -20px) scale(0.85);
+    opacity: 0.28;
+  }
+}
+
+.animate-blob-slow {
+  animation: blob-slow 20s ease-in-out infinite;
+}
+
+.animate-blob-slow-delayed {
+  animation: blob-slow-delayed 25s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-blob-slow-more {
+  animation: blob-slow-more 30s ease-in-out infinite;
+  animation-delay: 4s;
+}

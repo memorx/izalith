@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ArrowRight } from 'lucide-react';
@@ -8,7 +8,6 @@ import { Link } from '@/src/i18n/routing';
 
 export default function PortfolioHighlights() {
   const t = useTranslations('portfolio');
-  const locale = useLocale();
 
   const projects = [
     {
@@ -17,21 +16,24 @@ export default function PortfolioHighlights() {
       description: t('subastas.description'),
       tech: t('subastas.tech'),
       url: 'https://subastalasilla.com',
-      metrics: ['1K+ Concurrent Users', 'Zero Downtime', '<200ms Latency']
+      metrics: ['1K+ Concurrent Users', 'Zero Downtime', '<200ms Latency'],
+      isExternal: true
     },
     {
       title: t('madeByHumans.title'),
       subtitle: t('madeByHumans.subtitle'),
       description: t('madeByHumans.description'),
       tech: t('madeByHumans.tech'),
-      metrics: ['10K+ Active Users', '95%+ Accuracy', 'Multi-channel']
+      metrics: ['10K+ Active Users', '95%+ Accuracy', 'Multi-channel'],
+      isExternal: false
     },
     {
       title: t('wenco.title'),
       subtitle: t('wenco.subtitle'),
       description: t('wenco.description'),
       tech: t('wenco.tech'),
-      metrics: ['99.9% Uptime', '15+ Engineers Led', 'Global Scale']
+      metrics: ['99.9% Uptime', '15+ Engineers Led', 'Global Scale'],
+      isExternal: false
     }
   ];
 
@@ -46,58 +48,71 @@ export default function PortfolioHighlights() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, idx) => (
-            <Card
-              key={idx}
-              className="group bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 cursor-pointer"
-            >
-              <CardContent className="p-8">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-slate-100 mb-1">
-                      {project.title}
-                    </h3>
-                    <p className="text-cyan-400 text-sm">{project.subtitle}</p>
-                  </div>
-                  {project.url && (
-                    <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
-                  )}
-                </div>
+          {projects.map((project, idx) => {
+            const CardWrapper = project.isExternal ? 'a' : Link;
+            const cardProps = project.isExternal
+              ? {
+                  href: project.url,
+                  target: '_blank',
+                  rel: 'noopener noreferrer'
+                }
+              : { href: '/portfolio' };
 
-                <p className="text-slate-300 mb-6 leading-relaxed">
-                  {project.description}
-                </p>
+            return (
+              <CardWrapper key={idx} {...cardProps}>
+                <Card className="group bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 cursor-pointer h-full">
+                  <CardContent className="p-8">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-slate-100 mb-1">
+                          {project.title}
+                        </h3>
+                        <p className="text-cyan-400 text-sm">
+                          {project.subtitle}
+                        </p>
+                      </div>
+                      {project.isExternal && (
+                        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+                      )}
+                    </div>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.metrics.map((metric, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 bg-slate-800/50 rounded-full text-xs text-cyan-400 border border-slate-700"
-                    >
-                      {metric}
-                    </span>
-                  ))}
-                </div>
+                    <p className="text-slate-300 mb-6 leading-relaxed">
+                      {project.description}
+                    </p>
 
-                <div className="text-sm text-slate-500 font-mono">
-                  {project.tech}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.metrics.map((metric, i) => (
+                        <span
+                          key={i}
+                          className="px-3 py-1 bg-slate-800/50 rounded-full text-xs text-cyan-400 border border-slate-700"
+                        >
+                          {metric}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="text-sm text-slate-500 font-mono">
+                      {project.tech}
+                    </div>
+                  </CardContent>
+                </Card>
+              </CardWrapper>
+            );
+          })}
         </div>
 
         <div className="text-center">
-          <Link href={`/${locale}/portfolio`}>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-slate-700 text-slate-200 hover:bg-slate-800 px-8 py-6 text-lg rounded-xl backdrop-blur-sm"
-            >
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-slate-700 text-slate-200 hover:bg-slate-800 px-8 py-6 text-lg rounded-xl backdrop-blur-sm"
+            asChild
+          >
+            <Link href="/portfolio">
               {t('viewAll')}
               <ArrowRight className="ml-2" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
