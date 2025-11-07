@@ -24,29 +24,6 @@
     "uptime": "SLA de Disponibilidad",
     "countries": "Países Atendidos"
   },
-  "portfolio": {
-    "title": "Trabajo Destacado",
-    "subtitle": "Soluciones del mundo real entregando resultados medibles",
-    "viewAll": "Ver Todos los Proyectos",
-    "subastas": {
-      "title": "Subastas La Silla",
-      "subtitle": "Plataforma de Subastas en Tiempo Real",
-      "description": "1,000+ usuarios concurrentes soportados durante subastas de caballos en vivo sin caídas",
-      "tech": "Django, Nuxt.js, PostgreSQL, Redis, AWS"
-    },
-    "madeByHumans": {
-      "title": "Made by Humans AI",
-      "subtitle": "Plataforma de Agentes IA Bilingües",
-      "description": "10,000+ usuarios activos en WhatsApp, Telegram y canales de voz",
-      "tech": "OpenAI, Claude, n8n, TypeScript, GCP"
-    },
-    "wenco": {
-      "title": "Plataforma Minera Wenco",
-      "subtitle": "Sistema IoT Empresarial",
-      "description": "Plataforma de operaciones mineras críticas con telemetría en tiempo real a través de continentes",
-      "tech": "React, Azure IoT, C#, Kubernetes"
-    }
-  },
   "pricing": {
     "title": "Precios Transparentes",
     "subtitle": "Soluciones de Agentes IA y Automatización",
@@ -770,6 +747,219 @@
         "title": "¿Necesitas Guía Técnica Estratégica?",
         "description": "Conversemos sobre cómo 15+ años de experiencia pueden acelerar tu éxito",
         "button": "Agendar Sesión Estratégica"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "20+ proyectos en Agentes IA, Automatización, Desarrollo Web y Consultoría",
+    "filters": {
+      "all": "Todos los Proyectos",
+      "aiAgents": "Agentes IA",
+      "automation": "Automatización",
+      "webDev": "Desarrollo Web",
+      "consulting": "Consultoría"
+    },
+    "projects": {
+      "madeByHumans": {
+        "name": "Plataforma IA Made by Humans",
+        "description": "Plataforma de agentes IA bilingües sirviendo a más de 10,000 usuarios activos en WhatsApp, Telegram y canales de Voz",
+        "metrics": [
+          "10,000+ Usuarios Activos",
+          "95%+ Tasa de Precisión",
+          "Soporte Multi-canal",
+          "40% Reducción en Alucinaciones"
+        ]
+      },
+      "axenEnergy": {
+        "name": "Axen Energy - Agente de Ventas Solar",
+        "description": "Chatbot WhatsApp automatizando ventas de paneles solares desde consulta hasta generación de cotizaciones, operando 24/7 en México",
+        "metrics": [
+          "Disponibilidad 24/7",
+          "78% Aumento en Conversión",
+          "80% Respuesta Más Rápida",
+          "Cotizaciones Automatizadas"
+        ]
+      },
+      "axenCapital": {
+        "name": "Axen Capital - Asistente Financiero",
+        "description": "Asistente financiero inteligente con análisis IA de 8 capas: clasificación de intención, extracción de entidades, análisis de sentimiento y más",
+        "metrics": [
+          "8 Capas de Análisis IA",
+          "Contexto Multi-dimensional",
+          "Análisis de Documentos",
+          "Analytics en Tiempo Real"
+        ]
+      },
+      "aiWhatsappPackages": {
+        "name": "Paquetes AI WhatsApp",
+        "description": "Producto comercial con paquetes: Micro ($10K setup), Professional ($50K) y Enterprise ($150K) para empresas",
+        "metrics": [
+          "3 Paquetes Tier",
+          "Setup 48h (Micro)",
+          "Integración CRM",
+          "Análisis Predictivo"
+        ]
+      },
+      "subastasAutomation": {
+        "name": "Automatización Subastas La Silla",
+        "description": "Notificaciones de pujas automatizadas, campañas de email e integración de livestream YouTube para plataforma de subastas de alto tráfico",
+        "metrics": [
+          "1,000+ Usuarios Concurrentes",
+          "Notificaciones en Tiempo Real",
+          "Campañas Email Automatizadas",
+          "Cero Caídas en Eventos"
+        ]
+      },
+      "n8nTemplates": {
+        "name": "100+ Plantillas n8n",
+        "description": "Biblioteca de plantillas de automatización empresarial cubriendo agentes IA, sistemas RAG, automatización CRM, DevOps y creación de contenido",
+        "metrics": [
+          "100+ Plantillas",
+          "15 Categorías",
+          "Listas para Producción",
+          "Modulares y Reutilizables"
+        ]
+      },
+      "wenco": {
+        "name": "Plataforma Minera Wenco (Hitachi)",
+        "description": "Sistema IoT empresarial para operaciones mineras críticas con telemetría en tiempo real a través de continentes. Lideré equipo frontend por 4+ años.",
+        "metrics": [
+          "Despliegue Multi-Continente",
+          "99.9% SLA de Disponibilidad",
+          "Telemetría en Tiempo Real",
+          "15+ Ingenieros Gestionados"
+        ]
+      },
+      "subastasWeb": {
+        "name": "Subastas La Silla",
+        "description": "Plataforma de subastas en tiempo real soportando 1,000+ usuarios concurrentes durante subastas de caballos en vivo con pujas WebSocket",
+        "metrics": [
+          "1,000+ Usuarios Concurrentes",
+          "Pujas en Tiempo Real",
+          "Cero Caídas",
+          "Django + Nuxt.js"
+        ]
+      },
+      "disney": {
+        "name": "Disney Movie Insiders (Radical I/O)",
+        "description": "Habilitamos a Disney Movie Insiders para intercambiar puntos en línea por boletos de cine y mercancía con diseño de arquitectura frontend",
+        "metrics": [
+          "Asociación Disney",
+          "Sistema de Intercambio de Puntos",
+          "Integración E-commerce",
+          "Entrega UI/UX"
+        ]
+      },
+      "myrichmond": {
+        "name": "MyRichmond (Radical I/O)",
+        "description": "Simplifiqué interacciones ciudadanas con la Ciudad de Richmond: hub centralizado para impuestos, servicios públicos, recolección de basura, reciclaje con mecanismos de retroalimentación",
+        "metrics": [
+          "Plataforma Municipal",
+          "Servicios Ciudadanos",
+          "Búsqueda y Calendario",
+          "Sistemas de Feedback"
+        ]
+      },
+      "central1": {
+        "name": "Central 1 Credit Union - Soluciones de Nómina",
+        "description": "Soluciones de nómina para pequeñas empresas en cooperativas de crédito. Lideré 5 cooperativas y 2 desarrolladores junior como Scrum Master de equipo de 7 miembros",
+        "metrics": [
+          "Proyecto 2+ Años",
+          "Liderazgo de Equipo",
+          "Migración Angular",
+          "Cumplimiento WCAG"
+        ]
+      },
+      "sage": {
+        "name": "Sage Software - Servicios Móviles",
+        "description": "Desarrollador web líder por 6+ años desarrollando Sage Mobile Services, app Android y múltiples aplicaciones web con pruebas automatizadas",
+        "metrics": [
+          "Permanencia 6+ Años",
+          "Android + Web",
+          "Desarrollador Líder",
+          "Automatización Selenium"
+        ]
+      },
+      "radiant": {
+        "name": "Radiant Communications - Plataforma OSS",
+        "description": "Sistemas operativos integrados basados en web soportando procesos de negocio. Construí portal orientado al cliente para tickets de problemas reemplazando emails manuales",
+        "metrics": [
+          "ASP.NET MVC5",
+          "Portal de Cliente",
+          "Rastreador de Tickets",
+          "Alertas en Tiempo Real"
+        ]
+      },
+      "unity": {
+        "name": "Unity Technologies - IDE de Robótica",
+        "description": "IDE basado en navegador para plataforma educativa Tethys permitiendo a estudiantes K-12 programar robots Pepper (asociación SoftBank)",
+        "metrics": [
+          "Programación en Navegador",
+          "Educación K-12",
+          "React + TypeScript",
+          "Sin Instalación"
+        ]
+      },
+      "concurso": {
+        "name": "Concurso La Silla",
+        "description": "Plataforma internacional de competencia ecuestre con integración de boletería Boletia y contenido multilingüe",
+        "metrics": [
+          "2,000+ Boletos Vendidos",
+          "50+ Patrocinadores",
+          "90% Reducción de Costos",
+          "Alcance Internacional"
+        ]
+      },
+      "pemt": {
+        "name": "PEMT Logística",
+        "description": "Transformación digital completa: sitio web, infraestructura de email, integración WhatsApp y pipeline de generación de leads desde cero",
+        "metrics": [
+          "Transformación Digital",
+          "5+ Cuentas Email",
+          "Integración WhatsApp",
+          "Presupuesto 14K MXN"
+        ]
+      },
+      "congreso": {
+        "name": "Congreso Internacional de Turismo",
+        "description": "Sitio web de congreso académico con registro, perfiles de ponentes e integración Boletia para evento de múltiples días",
+        "metrics": [
+          "Programa Multi-día",
+          "Perfiles de Ponentes",
+          "Descuentos Grupales",
+          "Optimizado SEO"
+        ]
+      },
+      "educaruno": {
+        "name": "EducarUno - Instructor Técnico",
+        "description": "Lideré currículo de desarrollo web e IA para 200+ estudiantes (12-18 años) durante 2 años en plataforma EdTech mexicana",
+        "metrics": [
+          "200+ Estudiantes Enseñados",
+          "95% Tasa de Retención",
+          "2 Años de Experiencia",
+          "HTML/CSS/JS + IA/NLP"
+        ]
+      },
+      "aiCourse": {
+        "name": "Curso de IA para Profesores",
+        "description": "Desarrollé curso completo de fundamentos de IA para profesores de preparatoria y universidad con metodología interactiva",
+        "metrics": [
+          "Capacitación Docente",
+          "Módulo 60min Desarrollado",
+          "Actividades Interactivas",
+          "Enfoque en Ética y Privacidad"
+        ]
+      },
+      "govCanada": {
+        "name": "Estrategia RFP Gobierno de Canadá",
+        "description": "Consultoría estratégica para contratos gubernamentales a través de plataformas SAP Ariba, MERX, CanadaBuys y BC Bid",
+        "metrics": [
+          "Oportunidades Federales",
+          "Contratos Provinciales",
+          "Ofertas Permanentes",
+          "Registrado CRA"
+        ]
       }
     }
   }

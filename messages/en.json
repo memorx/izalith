@@ -24,29 +24,6 @@
     "uptime": "Uptime SLA",
     "countries": "Countries Served"
   },
-  "portfolio": {
-    "title": "Featured Work",
-    "subtitle": "Real-world solutions delivering measurable results",
-    "viewAll": "View All Projects",
-    "subastas": {
-      "title": "Subastas La Silla",
-      "subtitle": "Real-Time Auction Platform",
-      "description": "1,000+ concurrent users supported during live horse auctions with zero downtime",
-      "tech": "Django, Nuxt.js, PostgreSQL, Redis, AWS"
-    },
-    "madeByHumans": {
-      "title": "Made by Humans AI",
-      "subtitle": "Bilingual AI Agent Platform",
-      "description": "10,000+ active users across WhatsApp, Telegram, and Voice channels",
-      "tech": "OpenAI, Claude, n8n, TypeScript, GCP"
-    },
-    "wenco": {
-      "title": "Wenco Mining Platform",
-      "subtitle": "Enterprise IoT System",
-      "description": "Mission-critical mining operations platform with real-time telemetry across continents",
-      "tech": "React, Azure IoT, C#, Kubernetes"
-    }
-  },
   "pricing": {
     "title": "Transparent Pricing",
     "subtitle": "AI Agents & Automation Solutions",
@@ -770,6 +747,219 @@
         "title": "Need Strategic Technical Guidance?",
         "description": "Let's discuss how 15+ years of experience can accelerate your success",
         "button": "Schedule Strategy Session"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "20+ projects across AI Agents, Automation, Web Development, and Consulting",
+    "filters": {
+      "all": "All Projects",
+      "aiAgents": "AI Agents",
+      "automation": "Automation",
+      "webDev": "Web Development",
+      "consulting": "Consulting"
+    },
+    "projects": {
+      "madeByHumans": {
+        "name": "Made by Humans AI Platform",
+        "description": "Bilingual AI agent platform serving 10,000+ active users across WhatsApp, Telegram, and Voice channels",
+        "metrics": [
+          "10,000+ Active Users",
+          "95%+ Accuracy Rate",
+          "Multi-channel Support",
+          "40% Reduction in Hallucinations"
+        ]
+      },
+      "axenEnergy": {
+        "name": "Axen Energy - Solar Sales Agent",
+        "description": "WhatsApp chatbot automating solar panel sales from consultation to quote generation, operating 24/7 in Mexico",
+        "metrics": [
+          "24/7 Availability",
+          "78% Increase in Conversion",
+          "80% Faster Response Time",
+          "Automated Quote Generation"
+        ]
+      },
+      "axenCapital": {
+        "name": "Axen Capital - Financial Assistant",
+        "description": "Intelligent financial assistant with 8-layer AI analysis: intent classification, entity extraction, sentiment analysis, and more",
+        "metrics": [
+          "8 AI Analysis Layers",
+          "Multi-dimensional Context",
+          "Document Analysis",
+          "Real-time Analytics"
+        ]
+      },
+      "aiWhatsappPackages": {
+        "name": "AI WhatsApp Packages",
+        "description": "Commercial product offering: Micro ($10K setup), Professional ($50K), and Enterprise ($150K) packages for businesses",
+        "metrics": [
+          "3 Tier Packages",
+          "48h Setup (Micro)",
+          "CRM Integration",
+          "Predictive Analytics"
+        ]
+      },
+      "subastasAutomation": {
+        "name": "Subastas La Silla Automation",
+        "description": "Automated bidding notifications, email campaigns, and YouTube livestream integration for high-traffic auction platform",
+        "metrics": [
+          "1,000+ Concurrent Users",
+          "Real-time Bid Notifications",
+          "Automated Email Campaigns",
+          "Zero Downtime Events"
+        ]
+      },
+      "n8nTemplates": {
+        "name": "100+ n8n Workflow Templates",
+        "description": "Enterprise automation template library covering AI agents, RAG systems, CRM automation, DevOps, and content creation",
+        "metrics": [
+          "100+ Templates",
+          "15 Categories",
+          "Production-Ready",
+          "Modular & Reusable"
+        ]
+      },
+      "wenco": {
+        "name": "Wenco Mining Platform (Hitachi)",
+        "description": "Enterprise IoT system for mission-critical mining operations with real-time telemetry across continents. Led frontend team for 4+ years.",
+        "metrics": [
+          "Multi-Continent Deployment",
+          "99.9% Uptime SLA",
+          "Real-Time Telemetry",
+          "15+ Engineers Managed"
+        ]
+      },
+      "subastasWeb": {
+        "name": "Subastas La Silla",
+        "description": "Real-time auction platform supporting 1,000+ concurrent users during live horse auctions with WebSocket bidding",
+        "metrics": [
+          "1,000+ Concurrent Users",
+          "Real-Time Bidding",
+          "Zero Downtime",
+          "Django + Nuxt.js"
+        ]
+      },
+      "disney": {
+        "name": "Disney Movie Insiders (Radical I/O)",
+        "description": "Enabled Disney Movie Insiders to exchange points online for movie tickets and merchandise with frontend architecture design",
+        "metrics": [
+          "Disney Partnership",
+          "Points Exchange System",
+          "E-commerce Integration",
+          "UI/UX Delivery"
+        ]
+      },
+      "myrichmond": {
+        "name": "MyRichmond (Radical I/O)",
+        "description": "Streamlined citizen interactions with City of Richmond: centralized hub for taxes, utilities, garbage collection, recycling with feedback mechanisms",
+        "metrics": [
+          "Municipal Platform",
+          "Citizen Services",
+          "Search & Calendar",
+          "Feedback Systems"
+        ]
+      },
+      "central1": {
+        "name": "Central 1 Credit Union - Payroll Solutions",
+        "description": "Small business payroll solutions for credit unions. Led 5 co-ops and 2 junior developers as Scrum Master for 7-member team",
+        "metrics": [
+          "2+ Years Project",
+          "Team Leadership",
+          "Angular Migration",
+          "WCAG Compliance"
+        ]
+      },
+      "sage": {
+        "name": "Sage Software - Mobile Services",
+        "description": "Lead web developer for 6+ years developing Sage Mobile Services, Android app, and multiple web applications with automated testing",
+        "metrics": [
+          "6+ Years Tenure",
+          "Android + Web",
+          "Lead Developer",
+          "Selenium Automation"
+        ]
+      },
+      "radiant": {
+        "name": "Radiant Communications - OSS Platform",
+        "description": "Integrated web-based operating systems supporting business processes. Built customer-facing portal for trouble tickets replacing manual emails",
+        "metrics": [
+          "ASP.NET MVC5",
+          "Customer Portal",
+          "Ticket Tracker",
+          "Real-time Alerts"
+        ]
+      },
+      "unity": {
+        "name": "Unity Technologies - Robotics IDE",
+        "description": "Browser-based IDE for Tethys education platform enabling K-12 students to program Pepper robots (SoftBank partnership)",
+        "metrics": [
+          "Browser-Based Programming",
+          "K-12 Education",
+          "React + TypeScript",
+          "No Installation"
+        ]
+      },
+      "concurso": {
+        "name": "Concurso La Silla",
+        "description": "International equestrian competition platform with Boletia ticketing integration and multilingual content",
+        "metrics": [
+          "2,000+ Tickets Sold",
+          "50+ Sponsors",
+          "90% Overhead Reduction",
+          "International Reach"
+        ]
+      },
+      "pemt": {
+        "name": "PEMT Logística",
+        "description": "Complete digital transformation: website, email infrastructure, WhatsApp integration, and lead generation pipeline from scratch",
+        "metrics": [
+          "Digital Transformation",
+          "5+ Email Accounts",
+          "WhatsApp Integration",
+          "14K MXN Budget"
+        ]
+      },
+      "congreso": {
+        "name": "Congreso Internacional de Turismo",
+        "description": "Academic conference website with registration, speaker profiles, and Boletia integration for multi-day event",
+        "metrics": [
+          "Multi-day Program",
+          "Speaker Profiles",
+          "Group Discounts",
+          "SEO Optimized"
+        ]
+      },
+      "educaruno": {
+        "name": "EducarUno - Technical Instructor",
+        "description": "Led web development and AI curriculum for 200+ students (ages 12-18) over 2 years in Mexican EdTech platform",
+        "metrics": [
+          "200+ Students Taught",
+          "95% Retention Rate",
+          "2 Years Experience",
+          "HTML/CSS/JS + AI/NLP"
+        ]
+      },
+      "aiCourse": {
+        "name": "AI Course for Teachers",
+        "description": "Developed complete AI fundamentals course for high school and university teachers with interactive methodology",
+        "metrics": [
+          "Teacher Training",
+          "60min Module Developed",
+          "Interactive Activities",
+          "Ethics & Privacy Focus"
+        ]
+      },
+      "govCanada": {
+        "name": "Government of Canada RFP Strategy",
+        "description": "Strategic consulting for government contracts through SAP Ariba, MERX, CanadaBuys, and BC Bid platforms",
+        "metrics": [
+          "Federal Opportunities",
+          "Provincial Contracts",
+          "Standing Offers",
+          "CRA Registered"
+        ]
       }
     }
   }
