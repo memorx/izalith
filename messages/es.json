@@ -12,7 +12,7 @@
     "consulting": "Consultoría"
   },
   "hero": {
-    "title": "Izalith Consulting Corporation",
+    "title": "Ozalith Consulting Corporation",
     "subtitle": "Ingeniería de Despliegue Directo",
     "tagline": "Agentes IA • Automatización • Integración",
     "exploreServices": "Explorar Servicios",
@@ -75,11 +75,11 @@
     "title": "¿Listo para Construir?",
     "subtitle": "Trabajemos juntos para integrar, definir y lanzar tu próxima solución",
     "schedule": "Agendar Consulta",
-    "email": "guillermo.sanchezy@gmail.com"
+    "email": "guillermo@izalith.cc"
   },
   "footer": {
-    "copyright": "© 2025 Izalith • Made by Humans Digital",
-    "location": "Vancouver, BC • Monterrey, NL"
+    "copyright": "© 2025 Ozalith • Made by Humans Digital",
+    "location": "Vancouver, BC • Morelia, Michoacán"
   },
   "whatsapp": {
     "chatWithUs": "Chatea con nosotros",
@@ -109,7 +109,7 @@
     }
   },
   "about": {
-    "title": "Acerca de Izalith",
+    "title": "Acerca de Ozalith",
     "subtitle": "Excelencia en Ingeniería de Despliegue Directo",
     "hero": {
       "title": "Excelencia en Ingeniería Desde 2008",
@@ -124,7 +124,7 @@
     },
     "story": {
       "title": "Nuestra Historia",
-      "paragraph1": "Fundada por un ingeniero de software con más de 15 años de experiencia en México, Canadá, Japón y Europa, Izalith surgió de una creencia simple: la tecnología debe empoderar a las empresas, no complicarlas.",
+      "paragraph1": "Fundada por un ingeniero de software con más de 15 años de experiencia en México, Canadá, Japón y Europa, Ozalith surgió de una creencia simple: la tecnología debe empoderar a las empresas, no complicarlas.",
       "paragraph2": "Desde 2008, hemos trabajado con gigantes empresariales como Wenco (Hitachi), Unity Technologies, y startups innovadoras en Norteamérica y Latinoamérica. Nuestro historial habla por sí mismo: 10,000+ usuarios activos de agentes IA, 99.9% de disponibilidad en sistemas críticos, y más de $5M en infraestructura gestionada.",
       "paragraph3": "Hoy, con oficinas en Morelia y Vancouver, continuamos empujando los límites de lo posible con agentes IA, automatización y tecnologías web modernas."
     },
@@ -198,7 +198,11 @@
     }
   },
   "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones de vanguardia para empresas modernas",
     "aiAgents": {
+      "title": "Agentes IA",
+      "description": "IA conversacional inteligente para WhatsApp, Web y canales de voz con soporte bilingüe",
       "hero": {
         "title": "Agentes IA",
         "subtitle": "IA Conversacional Inteligente en Todos los Canales",
@@ -327,6 +331,8 @@
       }
     },
     "automation": {
+      "title": "Automatización",
+      "description": "Automatización de procesos y optimización de flujos de trabajo para aumentar eficiencia",
       "hero": {
         "title": "Automatización de Procesos",
         "subtitle": "Flujos de Trabajo n8n que Transforman Operaciones",
@@ -435,6 +441,14 @@
         "button": "Agendar Llamada de Descubrimiento"
       }
     },
+    "dataIntegration": {
+      "title": "Integración de Datos",
+      "description": "Integración perfecta de sistemas, APIs y bases de datos para flujo de datos unificado"
+    },
+    "fullStack": {
+      "title": "Desarrollo Web",
+      "description": "Aplicaciones web full-stack construidas con React, Next.js e infraestructura cloud moderna"
+    },
     "webDevelopment": {
       "hero": {
         "title": "Desarrollo Web Full-Stack",
@@ -516,115 +530,115 @@
         }
       },
       "realProjects": {
-        "title": "Real Projects",
+        "title": "Proyectos Reales",
         "project1": {
           "name": "Wenco Mining Platform (Hitachi)",
-          "description": "Enterprise IoT system for mission-critical mining operations with real-time telemetry across continents. Led frontend team for 4+ years.",
+          "description": "Sistema IoT empresarial para operaciones mineras críticas con telemetría en tiempo real a través de continentes. Lideré equipo frontend por 4+ años.",
           "metrics": [
-            "Multi-Continent Deployment",
-            "99.9% Uptime SLA",
-            "Real-Time Telemetry",
-            "15+ Engineers Managed"
+            "Despliegue Multi-Continente",
+            "99.9% SLA de Disponibilidad",
+            "Telemetría en Tiempo Real",
+            "15+ Ingenieros Gestionados"
           ]
         },
         "project2": {
           "name": "Subastas La Silla",
-          "description": "Real-time auction platform supporting 1,000+ concurrent users during live horse auctions with WebSocket bidding",
+          "description": "Plataforma de subastas en tiempo real soportando 1,000+ usuarios concurrentes durante subastas de caballos en vivo con pujas WebSocket",
           "metrics": [
-            "1,000+ Concurrent Users",
-            "Real-Time Bidding",
-            "Zero Downtime",
+            "1,000+ Usuarios Concurrentes",
+            "Pujas en Tiempo Real",
+            "Cero Caídas",
             "Django + Nuxt.js"
           ]
         },
         "project3": {
           "name": "Radical I/O - Disney Movie Insiders",
-          "description": "Enabled Disney Movie Insiders to exchange points online for movie tickets and merchandise with frontend architecture design",
+          "description": "Habilitamos a Disney Movie Insiders para intercambiar puntos en línea por boletos de cine y mercancía con diseño de arquitectura frontend",
           "metrics": [
-            "Disney Partnership",
-            "Points Exchange System",
-            "E-commerce Integration",
-            "UI/UX Delivery"
+            "Asociación Disney",
+            "Sistema de Intercambio de Puntos",
+            "Integración E-commerce",
+            "Entrega UI/UX"
           ]
         },
         "project4": {
           "name": "Radical I/O - MyRichmond",
-          "description": "Streamlined citizen interactions with City of Richmond: centralized hub for taxes, utilities, garbage collection, recycling with feedback mechanisms",
+          "description": "Simplifiqué interacciones ciudadanas con la Ciudad de Richmond: hub centralizado para impuestos, servicios públicos, recolección de basura, reciclaje con mecanismos de retroalimentación",
           "metrics": [
-            "Municipal Platform",
-            "Citizen Services",
-            "Search & Calendar",
-            "Feedback Systems"
+            "Plataforma Municipal",
+            "Servicios Ciudadanos",
+            "Búsqueda y Calendario",
+            "Sistemas de Feedback"
           ]
         },
         "project5": {
-          "name": "Central 1 Credit Union - Payroll Solutions",
-          "description": "Small business payroll solutions for credit unions. Led 5 co-ops and 2 junior developers as Scrum Master for 7-member team",
+          "name": "Central 1 Credit Union - Soluciones de Nómina",
+          "description": "Soluciones de nómina para pequeñas empresas en cooperativas de crédito. Lideré 5 cooperativas y 2 desarrolladores junior como Scrum Master de equipo de 7 miembros",
           "metrics": [
-            "2+ Years Project",
-            "Team Leadership",
-            "Angular Migration",
-            "WCAG Compliance"
+            "Proyecto 2+ Años",
+            "Liderazgo de Equipo",
+            "Migración Angular",
+            "Cumplimiento WCAG"
           ]
         },
         "project6": {
-          "name": "Sage Software - Mobile Services",
-          "description": "Lead web developer for 6+ years developing Sage Mobile Services, Android app, and multiple web applications with automated testing",
+          "name": "Sage Software - Servicios Móviles",
+          "description": "Desarrollador web líder por 6+ años desarrollando Sage Mobile Services, app Android y múltiples aplicaciones web con pruebas automatizadas",
           "metrics": [
-            "6+ Years Tenure",
+            "Permanencia 6+ Años",
             "Android + Web",
-            "Lead Developer",
-            "Selenium Automation"
+            "Desarrollador Líder",
+            "Automatización Selenium"
           ]
         },
         "project7": {
-          "name": "Radiant Communications - OSS Platform",
-          "description": "Integrated web-based operating systems supporting business processes. Built customer-facing portal for trouble tickets replacing manual emails",
+          "name": "Radiant Communications - Plataforma OSS",
+          "description": "Sistemas operativos integrados basados en web soportando procesos de negocio. Construí portal orientado al cliente para tickets de problemas reemplazando emails manuales",
           "metrics": [
             "ASP.NET MVC5",
-            "Customer Portal",
-            "Ticket Tracker",
-            "Real-time Alerts"
+            "Portal de Cliente",
+            "Rastreador de Tickets",
+            "Alertas en Tiempo Real"
           ]
         },
         "project8": {
-          "name": "Unity Technologies - Robotics IDE",
-          "description": "Browser-based IDE for Tethys education platform enabling K-12 students to program Pepper robots (SoftBank partnership)",
+          "name": "Unity Technologies - IDE de Robótica",
+          "description": "IDE basado en navegador para plataforma educativa Tethys permitiendo a estudiantes K-12 programar robots Pepper (asociación SoftBank)",
           "metrics": [
-            "Browser-Based Programming",
-            "K-12 Education",
+            "Programación en Navegador",
+            "Educación K-12",
             "React + TypeScript",
-            "No Installation"
+            "Sin Instalación"
           ]
         },
         "project9": {
           "name": "Concurso La Silla",
-          "description": "International equestrian competition platform with Boletia ticketing integration and multilingual content",
+          "description": "Plataforma internacional de competencia ecuestre con integración de boletería Boletia y contenido multilingüe",
           "metrics": [
-            "2,000+ Tickets Sold",
-            "50+ Sponsors",
-            "90% Overhead Reduction",
-            "International Reach"
+            "2,000+ Boletos Vendidos",
+            "50+ Patrocinadores",
+            "90% Reducción de Costos",
+            "Alcance Internacional"
           ]
         },
         "project10": {
           "name": "PEMT Logística",
-          "description": "Complete digital transformation: website, email infrastructure, WhatsApp integration, and lead generation pipeline from scratch",
+          "description": "Transformación digital completa: sitio web, infraestructura de email, integración WhatsApp y pipeline de generación de leads desde cero",
           "metrics": [
-            "Digital Transformation",
-            "5+ Email Accounts",
-            "WhatsApp Integration",
-            "14K MXN Budget"
+            "Transformación Digital",
+            "5+ Cuentas Email",
+            "Integración WhatsApp",
+            "Presupuesto 14K MXN"
           ]
         },
         "project11": {
           "name": "Congreso Internacional de Turismo",
-          "description": "Academic conference website with registration, speaker profiles, and Boletia integration for multi-day event",
+          "description": "Sitio web de congreso académico con registro, perfiles de ponentes e integración Boletia para evento de múltiples días",
           "metrics": [
-            "Multi-day Program",
-            "Speaker Profiles",
-            "Group Discounts",
-            "SEO Optimized"
+            "Programa Multi-día",
+            "Perfiles de Ponentes",
+            "Descuentos Grupales",
+            "Optimizado SEO"
           ]
         }
       },
@@ -753,6 +767,25 @@
   "portfolio": {
     "title": "Portafolio",
     "subtitle": "20+ proyectos en Agentes IA, Automatización, Desarrollo Web y Consultoría",
+    "viewAll": "Ver Todos los Proyectos",
+    "subastas": {
+      "title": "Subastas La Silla",
+      "subtitle": "Plataforma de Subastas en Tiempo Real",
+      "description": "Sistema de pujas en vivo soportando 1,000+ usuarios concurrentes durante subastas de caballos con cero caídas",
+      "tech": "Django • Nuxt.js • WebSockets"
+    },
+    "madeByHumans": {
+      "title": "Plataforma IA Made by Humans",
+      "subtitle": "Plataforma de Agentes IA Bilingües",
+      "description": "Plataforma de agentes IA sirviendo a 10,000+ usuarios activos en WhatsApp, Telegram y canales de Voz",
+      "tech": "OpenAI • n8n • Pinecone • PostgreSQL"
+    },
+    "wenco": {
+      "title": "Plataforma Minera Wenco",
+      "subtitle": "IoT Empresarial (Hitachi)",
+      "description": "Operaciones mineras críticas con telemetría en tiempo real. Lideré equipo frontend por 4+ años.",
+      "tech": "React • Azure • Telemetría en Tiempo Real"
+    },
     "filters": {
       "all": "Todos los Proyectos",
       "aiAgents": "Agentes IA",
