@@ -49,54 +49,62 @@ export default function PortfolioHighlights() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {projects.map((project, idx) => {
-            const CardWrapper = project.isExternal ? 'a' : Link;
-            const cardProps = project.isExternal
-              ? {
-                  href: project.url,
-                  target: '_blank',
-                  rel: 'noopener noreferrer'
-                }
-              : { href: '/portfolio' };
+            const cardContent = (
+              <Card className="group bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 cursor-pointer h-full">
+                <CardContent className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-2xl font-bold text-slate-100 mb-1">
+                        {project.title}
+                      </h3>
+                      <p className="text-cyan-400 text-sm">
+                        {project.subtitle}
+                      </p>
+                    </div>
+                    {project.isExternal && (
+                      <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+                    )}
+                  </div>
+
+                  <p className="text-slate-300 mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.metrics.map((metric, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-slate-800/50 rounded-full text-xs text-cyan-400 border border-slate-700"
+                      >
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="text-sm text-slate-500 font-mono">
+                    {project.tech}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+
+            if (project.isExternal && project.url) {
+              return (
+                <a
+                  key={idx}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cardContent}
+                </a>
+              );
+            }
 
             return (
-              <CardWrapper key={idx} {...cardProps}>
-                <Card className="group bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 cursor-pointer h-full">
-                  <CardContent className="p-8">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-100 mb-1">
-                          {project.title}
-                        </h3>
-                        <p className="text-cyan-400 text-sm">
-                          {project.subtitle}
-                        </p>
-                      </div>
-                      {project.isExternal && (
-                        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
-                      )}
-                    </div>
-
-                    <p className="text-slate-300 mb-6 leading-relaxed">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.metrics.map((metric, i) => (
-                        <span
-                          key={i}
-                          className="px-3 py-1 bg-slate-800/50 rounded-full text-xs text-cyan-400 border border-slate-700"
-                        >
-                          {metric}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="text-sm text-slate-500 font-mono">
-                      {project.tech}
-                    </div>
-                  </CardContent>
-                </Card>
-              </CardWrapper>
+              <Link key={idx} href="/portfolio">
+                {cardContent}
+              </Link>
             );
           })}
         </div>
