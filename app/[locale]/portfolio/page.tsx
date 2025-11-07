@@ -80,7 +80,7 @@ export default function PortfolioPage() {
       translationKey: 'wenco',
       category: 'web-dev',
       techStack: ['React', 'Azure IoT', 'C#', 'Kubernetes', 'Docker'],
-      videoId: 'u6wht0ya8ek'
+      videoId: 'WbdJZiLvVjg'
     },
     {
       id: 'subastas-web',
