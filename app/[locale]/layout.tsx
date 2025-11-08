@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import Navbar from '@/components/layout/Navbar'; // ← AGREGA ESTO
 import '../globals.css';
+import { Analytics } from '@/components/Analytics';
 
 const geist = Geist({
   variable: '--font-geist-sans',
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar /> {/* ← AGREGA ESTO */}
           {children}
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
